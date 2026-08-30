@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crohn's Veteran | Empowering the Global IBD Community</title>
   
-  <!-- Favicon / Browser Tab Logo -->
-  <link rel="icon" type="image/png" href="assets/images/logo.png?v=2" />
-<link rel="apple-touch-icon" href="assets/images/logo.png?v=2" />
+  <!-- Browser Tab Favicon (Keeps Original Square Icon) -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
 
   <!-- SEO & Social Meta -->
   <meta name="description" content="Dedicated to uplifting Crohn's and Ulcerative Colitis warriors through community stories, patient advocacy, podcasts, and gut-friendly resources." />
@@ -55,17 +55,15 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       
-      <!-- Brand Logo & Name (Enhanced Visibility) -->
-      <a href="#" class="flex items-center gap-3.5 group">
-        <div class="h-12 px-2.5 py-1 rounded-xl bg-slate-900 border border-slate-700/80 shadow-md flex items-center justify-center group-hover:border-brand-500 transition">
-          <img 
-            src="assets/images/logo.png?v=3" 
-            alt="Crohn's Veteran Logo" 
-            class="h-9 w-auto max-w-[120px] object-contain"
-            onerror="this.style.display='none'"
-          />
-        </div>
-        <span class="font-black text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-700 via-purple-700 to-indigo-800">
+      <!-- Brand Logo & Name (Clean, No Dark Box) -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img 
+          src="assets/images/header-logo.png?v=2" 
+          alt="Crohn's Veteran Logo" 
+          class="h-10 w-auto object-contain transition duration-200 group-hover:scale-105"
+          onerror="this.src='assets/images/logo.png?v=4'"
+        />
+        <span class="font-extrabold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-700 via-purple-700 to-indigo-800">
           Crohn's Veteran
         </span>
       </a>
