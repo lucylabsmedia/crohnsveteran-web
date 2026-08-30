@@ -257,10 +257,11 @@
     </div>
   </section>
 
-  <!-- Social Media & Follow Hub -->
+  <!-- Social Media & Follow Hub (Side-by-Side Grid) -->
   <section id="social" class="py-16 bg-gradient-to-br from-purple-50/70 via-slate-50 to-white border-y border-slate-200">
     <div class="max-w-6xl mx-auto px-6">
       
+      <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto mb-10">
         <span class="text-brand-600 text-xs font-bold uppercase tracking-wider">Join The Community</span>
         <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Follow & Watch Across Platforms</h2>
@@ -269,21 +270,23 @@
         </p>
       </div>
 
-      <div class="grid lg:grid-cols-12 gap-8">
+      <!-- 2-Column Balanced Grid -->
+      <div class="grid md:grid-cols-2 gap-8 items-stretch">
         
-        <!-- Column 1: TikTok Feature & Feed Card -->
-        <div class="lg:col-span-7 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <!-- Column 1: TikTok Card -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-brand-300 transition">
           <div>
-            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+            <!-- Header -->
+            <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow">
-                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <div class="w-11 h-11 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow-md shrink-0">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-slate-900 text-base">Jordan | Crohn's Veteran</h3>
-                  <p class="text-xs text-slate-500">@crohns_veteran • Short clips & daily habits</p>
+                  <h3 class="font-bold text-slate-900 text-base leading-tight">Jordan | Crohn's Veteran</h3>
+                  <p class="text-xs text-slate-500 mt-0.5">@crohns_veteran • TikTok Shorts</p>
                 </div>
               </div>
               <a href="https://www.tiktok.com/@crohns_veteran" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition inline-flex items-center gap-1 shadow-sm">
@@ -291,55 +294,56 @@
               </a>
             </div>
 
-            <!-- SociableKIT Widget Container -->
-            <div class='sk-ww-tiktok-feed' data-embed-id='25709527'>
-              <!-- Interactive Fallback Card -->
-              <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center flex flex-col items-center justify-center my-2">
-                <span class="text-2xl mb-2">🎬</span>
-                <h4 class="font-bold text-slate-800 text-sm">Watch the Latest TikTok Shorts</h4>
-                <p class="text-xs text-slate-500 max-w-sm my-2">
-                  Follow along for fast gut-friendly smoothie ideas, chronic illness recovery tips, and behind-the-scenes clips.
-                </p>
-                <a href="https://www.tiktok.com/@crohns_veteran" target="_blank" rel="noopener noreferrer" class="mt-2 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition inline-flex items-center gap-1.5 shadow">
-                  <span>Open @crohns_veteran on TikTok</span>
-                  <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
-                </a>
-              </div>
+            <!-- Content Area / Feed -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center flex flex-col items-center justify-center">
+              <span class="text-3xl mb-2">🎬</span>
+              <h4 class="font-bold text-slate-900 text-sm mb-1">Watch Quick Tips & Daily Habits</h4>
+              <p class="text-xs text-slate-500 max-w-sm mb-5 leading-relaxed">
+                Follow for bite-sized smoothie ideas, lifestyle reflections, and day-in-the-life IBD advocacy shorts.
+              </p>
+              <a href="https://www.tiktok.com/@crohns_veteran" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition inline-flex items-center justify-center gap-1.5 shadow-sm">
+                <span>Open @crohns_veteran on TikTok</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
-            
           </div>
-        </div>
-            
+
+          <!-- Bottom Footer Info -->
+          <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Short-form clips</span>
+            <span class="text-brand-600 font-semibold">New posts weekly</span>
           </div>
         </div>
 
-        <!-- Column 2: YouTube Channel Hub -->
-        <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <!-- Column 2: YouTube Card -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-red-300 transition">
           <div>
-            <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+            <!-- Header -->
+            <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center shadow-sm">
-                  <svg class="w-5 h-5 text-red-600 fill-current" viewBox="0 0 24 24">
+                <div class="w-11 h-11 rounded-xl bg-red-600 text-white flex items-center justify-center shadow-md shrink-0">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-bold text-slate-900 text-base">YouTube Channel</h3>
-                  <p class="text-xs text-slate-500">Long-form interviews & recipes</p>
+                  <h3 class="font-bold text-slate-900 text-base leading-tight">YouTube Channel</h3>
+                  <p class="text-xs text-slate-500 mt-0.5">@crohnsveteran • Full Episodes & Guides</p>
                 </div>
               </div>
               <a href="https://www.youtube.com/@crohnsveteran?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition inline-flex items-center gap-1 shadow-sm">
-                Subscribe <i data-lucide="bell" class="w-3 h-3"></i>
+                Subscribe <i data-lucide="bell" class="w-3.5 h-3.5"></i>
               </a>
             </div>
 
-            <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 text-center flex flex-col items-center justify-center my-2">
-              <div class="w-12 h-12 rounded-full bg-red-100 text-red-600 flex items-center justify-center mb-3">
+            <!-- Content Area / Channel -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-center flex flex-col items-center justify-center">
+              <div class="w-12 h-12 rounded-full bg-red-100 text-red-600 flex items-center justify-center mb-2">
                 <i data-lucide="play" class="w-5 h-5 fill-current ml-0.5"></i>
               </div>
               <h4 class="font-bold text-slate-900 text-sm mb-1">Watch Full Video Episodes</h4>
-              <p class="text-xs text-slate-500 max-w-xs mb-4">
-                Full-length podcast interviews, patient spotlights, and healthy cooking guides.
+              <p class="text-xs text-slate-500 max-w-sm mb-5 leading-relaxed">
+                Explore in-depth conversations on navigating IBD in the workplace, overcoming medical hurdles, and gut-friendly nutrition.
               </p>
               <a href="https://www.youtube.com/@crohnsveteran" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-white border border-slate-300 hover:border-red-500 text-slate-800 text-xs font-bold shadow-sm transition inline-flex items-center justify-center gap-2">
                 <span>Go to www.youtube.com/@crohnsveteran</span>
@@ -348,8 +352,9 @@
             </div>
           </div>
 
-          <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
-            <span>New content weekly</span>
+          <!-- Bottom Footer Info -->
+          <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+            <span>Long-form interviews</span>
             <span class="text-brand-600 font-semibold">Free to stream</span>
           </div>
         </div>
