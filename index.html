@@ -10,6 +10,16 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="apple-touch-icon" href="assets/images/logo.png" />
 
+  <!-- Google tag (gtag.js) - GA4 Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GM49NBWQT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0GM49NBWQT');
+  </script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -307,10 +317,9 @@
       </div>
     </section>
 
-    <!-- 7: SOCIAL PROOF / TOP PODCAST REVIEW SECTION (FEEDSPOT RECOGNITION) -->
+    <!-- 7: SOCIAL PROOF / PODCAST REVIEW SECTION (FEEDSPOT RECOGNITION) -->
     <section class="py-16 bg-purple-950 text-white" aria-labelledby="podcast-recognition-heading">
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <!-- Feedspot Recognition Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-800/80 border border-purple-600 text-amber-300 text-xs font-bold uppercase tracking-wider mb-6">
           <i data-lucide="trophy" class="w-4 h-4 text-amber-400" aria-hidden="true"></i>
           Recognized as a Top Crohn's Disease Podcast
@@ -324,7 +333,7 @@
           <i data-lucide="star" class="w-5 h-5 fill-current"></i>
         </div>
         <span class="sr-only">Rated 5 out of 5 stars</span>
-        
+
         <h2 id="podcast-recognition-heading" class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
           Crohn's Veteran Podcast
         </h2>
@@ -514,7 +523,7 @@
         </div>
 
         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-800/80 p-6 sm:p-8 rounded-2xl border border-slate-700 shadow-xl">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="access_key" value="a0c1a91d-c51a-484e-86ff-059e7ecb7775" />
           <input type="hidden" name="subject" value="New Inquiry - Crohn's Veteran Platform" />
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
 
@@ -703,9 +712,44 @@
       lucide.createIcons();
     }
 
+    // GA4 Custom Event Tracking
+    function initAnalyticsEvents() {
+      // 1. Track Outbound Store & "Buy Now" Clicks
+      document.addEventListener('click', (e) => {
+        const targetLink = e.target.closest('a');
+        if (!targetLink) return;
+
+        const href = targetLink.getAttribute('href') || '';
+        if (href.includes('crohnsveteranstore.printful.me')) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'begin_checkout', {
+              event_category: 'ecommerce',
+              event_label: 'Printful Store Navigation',
+              destination: href
+            });
+          }
+        }
+      });
+
+      // 2. Track Form Submissions
+      const contactForm = document.querySelector('form[action*="web3forms"]');
+      if (contactForm) {
+        contactForm.addEventListener('submit', () => {
+          const inquiryType = document.getElementById('form-inquiry')?.value || 'General';
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+              event_category: 'engagement',
+              event_label: inquiryType
+            });
+          }
+        });
+      }
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
       loadPrintfulProducts();
+      initAnalyticsEvents();
     });
   </script>
 </body>
