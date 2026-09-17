@@ -10,13 +10,40 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="apple-touch-icon" href="assets/images/logo.png" />
 
-  <!-- Google tag (gtag.js) - GA4 Tracking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GM49NBWQT"></script>
+  <!-- Google Consent Mode v2 (Default: Denied until explicit user opt-in) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
+    function getStoredConsent() {
+      const match = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
+      return match ? match[2] : null;
+    }
+
+    const savedConsent = getStoredConsent();
+
+    if (savedConsent === 'granted') {
+      gtag('consent', 'default', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
+    } else {
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+      });
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) - GA4 Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GM49NBWQT"></script>
+  <script>
+    gtag('js', new Date());
     gtag('config', 'G-0GM49NBWQT');
   </script>
 
@@ -56,7 +83,7 @@
   </a>
 
   <!-- Header / Navigation -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200" role="banner">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200" role="banner">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-lg p-1" aria-label="Crohn's Veteran Home">
         <img 
@@ -523,7 +550,7 @@
         </div>
 
         <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-800/80 p-6 sm:p-8 rounded-2xl border border-slate-700 shadow-xl">
-          <input type="hidden" name="access_key" value="a0c1a91d-c51a-484e-86ff-059e7ecb7775" />
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
           <input type="hidden" name="subject" value="New Inquiry - Crohn's Veteran Platform" />
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
 
@@ -580,8 +607,68 @@
     </div>
   </footer>
 
+  <!-- ADA / GDPR Compliant Cookie Consent Banner -->
+  <div 
+    id="cookie-consent-banner" 
+    role="region" 
+    aria-label="Cookie Consent" 
+    class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-md bg-slate-900 text-white p-5 rounded-2xl shadow-2xl border border-slate-700 z-50 flex flex-col gap-3 transition-transform duration-300"
+  >
+    <div class="flex items-start gap-3">
+      <div class="w-8 h-8 rounded-lg bg-brand-600/20 text-brand-400 flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+        <i data-lucide="shield-alert" class="w-4 h-4"></i>
+      </div>
+      <div>
+        <h3 class="font-bold text-sm text-slate-100">Privacy & Cookie Preferences</h3>
+        <p class="text-xs text-slate-300 leading-relaxed mt-1">
+          We use cookies to analyze site traffic and enhance your community advocacy experience. Consent is optional and can be declined at any time.
+        </p>
+      </div>
+    </div>
+    
+    <div class="flex items-center justify-end gap-2.5 pt-2 border-t border-slate-800">
+      <button 
+        type="button" 
+        id="btn-reject-cookies" 
+        onclick="resolveCookieConsent('denied')" 
+        class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+      >
+        Reject Non-Essential
+      </button>
+      <button 
+        type="button" 
+        id="btn-accept-cookies" 
+        onclick="resolveCookieConsent('granted')" 
+        class="px-4 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-500"
+      >
+        Accept All
+      </button>
+    </div>
+  </div>
+
   <!-- Scripts -->
   <script>
+    // Cookie Consent Banner & Consent Mode Update Handler
+    function resolveCookieConsent(status) {
+      const banner = document.getElementById('cookie-consent-banner');
+      
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+          'analytics_storage': status,
+          'ad_storage': status,
+          'ad_user_data': status,
+          'ad_personalization': status
+        });
+      }
+
+      const maxAge = 365 * 24 * 60 * 60;
+      document.cookie = `cookie_consent=${status}; max-age=${maxAge}; path=/; SameSite=Lax; Secure`;
+
+      if (banner) {
+        banner.classList.add('hidden');
+      }
+    }
+
     // Accessible FAQ Accordion Toggle
     function toggleFaq(index) {
       const content = document.getElementById(`faq-content-${index}`);
@@ -714,7 +801,6 @@
 
     // GA4 Custom Event Tracking
     function initAnalyticsEvents() {
-      // 1. Track Outbound Store & "Buy Now" Clicks
       document.addEventListener('click', (e) => {
         const targetLink = e.target.closest('a');
         if (!targetLink) return;
@@ -731,7 +817,6 @@
         }
       });
 
-      // 2. Track Form Submissions
       const contactForm = document.querySelector('form[action*="web3forms"]');
       if (contactForm) {
         contactForm.addEventListener('submit', () => {
@@ -747,6 +832,14 @@
     }
 
     document.addEventListener('DOMContentLoaded', () => {
+      // Check stored cookie preferences
+      const match = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
+      const consent = match ? match[2] : null;
+      const banner = document.getElementById('cookie-consent-banner');
+      if (consent && banner) {
+        banner.classList.add('hidden');
+      }
+
       lucide.createIcons();
       loadPrintfulProducts();
       initAnalyticsEvents();
