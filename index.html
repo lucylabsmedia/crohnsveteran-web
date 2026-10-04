@@ -1,849 +1,1347 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crohn's Veteran | Empowering the Global IBD Community</title>
-  <meta name="description" content="An inclusive lifestyle platform, digital solution lab, and advocacy hub empowering individuals navigating Crohn's through lived experience, awareness gear, and modern web/AI technology." />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crohn's Veteran | Empowering the Global IBD Community</title>
+<meta name="description" content="Crohn's Veteran supports the IBD community through real stories, advocacy, awareness gear, and tools built with lived experience. Founded by Air Force veteran Jordan B. McConnell.">
+<meta name="theme-color" content="#140C2A">
+<link rel="canonical" href="https://www.crohnsveteran.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.crohnsveteran.com/">
+<meta property="og:title" content="Crohn's Veteran | Empowering the Global IBD Community">
+<meta property="og:description" content="Real stories, advocacy, awareness gear, and tools built with lived experience, for the IBD community and everyone who cares about them.">
+<meta property="og:image" content="https://www.crohnsveteran.com/assets/images/founder.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/images/logo.png">
+<link rel="apple-touch-icon" href="assets/images/logo.png">
 
-  <!-- Favicon / Browser Tab -->
-  <link rel="icon" type="image/png" href="assets/images/logo.png" />
-  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+<!-- Google Consent Mode v2 (Default: Denied until explicit user opt-in) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
 
-  <!-- Google Consent Mode v2 (Default: Denied until explicit user opt-in) -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+  function getStoredConsent() {
+    const match = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
+    return match ? match[2] : null;
+  }
 
-    function getStoredConsent() {
-      const match = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
-      return match ? match[2] : null;
-    }
+  const savedConsent = getStoredConsent();
 
-    const savedConsent = getStoredConsent();
+  if (savedConsent === 'granted') {
+    gtag('consent', 'default', {
+      'analytics_storage': 'granted',
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted'
+    });
+  } else {
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  }
+</script>
 
-    if (savedConsent === 'granted') {
-      gtag('consent', 'default', {
-        'analytics_storage': 'granted',
-        'ad_storage': 'granted',
-        'ad_user_data': 'granted',
-        'ad_personalization': 'granted'
-      });
-    } else {
-      gtag('consent', 'default', {
-        'analytics_storage': 'denied',
-        'ad_storage': 'denied',
-        'ad_user_data': 'denied',
-        'ad_personalization': 'denied',
-        'wait_for_update': 500
-      });
-    }
-  </script>
+<!-- Google tag (gtag.js) - GA4 Tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GM49NBWQT"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-0GM49NBWQT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Saira:wdth,wght@50..125,300..900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","@id":"https://www.crohnsveteran.com/#org","name":"Crohn's Veteran","url":"https://www.crohnsveteran.com/","logo":"https://www.crohnsveteran.com/assets/images/header-logo.png","founder":{"@id":"https://www.crohnsveteran.com/#jordan"},"sameAs":["https://www.instagram.com/official.crohnsveteran/","https://www.youtube.com/channel/UCvmWubDgKaO1DWD1t_gwzsg"]},
+ {"@type":"Person","@id":"https://www.crohnsveteran.com/#jordan","name":"Jordan B. McConnell","jobTitle":"Founder, Crohn's Veteran","image":"https://www.crohnsveteran.com/assets/images/founder.jpg","sameAs":["https://www.linkedin.com/in/jordanbmcconnell/","https://www.instagram.com/crohnsveteran/"]},
+ {"@type":"PodcastSeries","name":"Crohn's Veteran Podcast","url":"https://podcasts.apple.com/us/podcast/crohns-veteran-podcast/id1515327063","author":{"@id":"https://www.crohnsveteran.com/#jordan"}}
+]}
+</script>
+<style>
+/* ===== Tokens ===== */
+:root{
+  --night:#140C2A;
+  --night-deep:#0F0922;
+  --aubergine:#24174A;
+  --violet:#7A4FE0;
+  --violet-ink:#5B32C2;
+  --lavender:#CDBBFF;
+  --mist:#D9D0F5;
+  --mist-dim:#BFB3E0;
+  --first-light:#FFC29E;
+  --paper:#F4F0FB;
+  --paper-2:#ECE6F8;
+  --ink:#1C1433;
+  --ink-soft:#4A4166;
+  --rule:rgba(28,20,51,.14);
+  --rule-dark:rgba(205,187,255,.16);
+  --display:"Saira","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,-apple-system,sans-serif;
+  --max:1180px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  interpolate-size:allow-keywords;
+}
 
-  <!-- Google tag (gtag.js) - GA4 Tracking -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GM49NBWQT"></script>
-  <script>
-    gtag('js', new Date());
-    gtag('config', 'G-0GM49NBWQT');
-  </script>
+/* ===== Base ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--night)}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.04;letter-spacing:-.01em;font-weight:760}
+h2{font-size:clamp(2.1rem,4.6vw,3.6rem);font-stretch:82%;max-width:18ch;text-wrap:balance}
+h3{font-size:1.35rem;font-stretch:95%;font-weight:680;line-height:1.2}
+:focus-visible{outline:3px solid var(--first-light);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:1rem;top:-5rem;z-index:100;background:var(--first-light);color:var(--night);padding:.7rem 1.1rem;border-radius:8px;font-weight:700;text-decoration:none}
+.skip:focus{top:calc(1rem + env(safe-area-inset-top,0px))}
+.wrap{width:min(100% - 2.5rem,var(--max));margin-inline:auto}
+.section{padding-block:clamp(4.5rem,10vw,8rem)}
+section[id]{scroll-margin-top:72px}
+.paper{background:var(--paper);color:var(--ink)}
+.paper-2{background:var(--paper-2);color:var(--ink)}
+.night{background:var(--night);color:#EDE7FF}
+.lede{font-size:1.15rem;max-width:58ch;color:var(--ink-soft)}
+.night .lede{color:var(--mist-dim)}
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#faf5ff',
-              100: '#f3e8ff',
-              200: '#e9d5ff',
-              300: '#d8b4fe',
-              400: '#c084fc',
-              500: '#a855f7',
-              600: '#9333ea',
-              700: '#7e22ce',
-              800: '#6b21a8',
-              900: '#581c87',
-            }
-          }
-        }
-      }
-    }
-  </script>
+/* ===== Buttons & links ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:48px;padding:.8rem 1.45rem;border-radius:999px;font-family:var(--display);font-weight:650;font-stretch:100%;font-size:1rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .25s var(--ease),background-color .25s,color .25s,border-color .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--first-light);color:var(--night)}
+.btn-primary:hover{background:#FFD6BC}
+.btn-ghost{border-color:rgba(205,187,255,.5);color:#EDE7FF;background:transparent}
+.btn-ghost:hover{border-color:var(--lavender);background:rgba(205,187,255,.08)}
+.btn-violet{background:var(--violet-ink);color:#fff}
+.btn-violet:hover{background:var(--violet)}
+.text-link{font-family:var(--display);font-weight:650;color:var(--violet-ink);text-decoration:underline;text-underline-offset:.32em;text-decoration-thickness:2px;transition:color .2s,text-underline-offset .25s var(--ease)}
+.text-link:hover{text-underline-offset:.45em}
+.night .text-link{color:var(--first-light)}
 
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+/* ===== Header ===== */
+.site-header{position:fixed;inset:0 0 auto;z-index:50;padding-top:env(safe-area-inset-top,0px);color:#fff;transition:background-color .35s,box-shadow .35s}
+.site-header.is-solid{background:rgba(20,12,42,.84);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--rule-dark)}
+.nav{display:flex;align-items:center;gap:1.6rem;height:72px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-family:var(--display);font-weight:760;font-size:1.15rem;font-stretch:90%}
+.brand img{width:40px;height:40px;object-fit:contain}
+.brand-mark{display:none;width:40px;height:40px;border-radius:50%;background:var(--violet);place-items:center;font-size:.95rem;font-stretch:100%}
+.brand.no-logo img{display:none}
+.brand.no-logo .brand-mark{display:grid}
+.nav > nav{margin-left:auto}
+.nav-links{display:flex;gap:1.6rem;margin:0;padding:0;list-style:none}
+.nav-links a{color:var(--mist);text-decoration:none;font-size:.98rem;position:relative;padding-block:.4rem}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--first-light);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover,.nav-links a[aria-current="true"]{color:#fff}
+.nav-links a:hover::after,.nav-links a[aria-current="true"]::after{transform:scaleX(1)}
+.nav .btn{min-height:42px;padding:.55rem 1.15rem}
+.menu-btn{display:none;margin-left:auto;background:transparent;color:#fff;border:1.5px solid rgba(205,187,255,.45);border-radius:999px;min-height:42px;padding:.5rem 1.1rem;font:650 1rem/1 var(--display);cursor:pointer}
+@media (max-width:1080px){.nav > nav,.nav .btn-primary{display:none}.menu-btn{display:inline-flex;align-items:center}}
+
+/* Mobile menu (popover API) */
+#mnav{margin:0;inset:0 0 auto auto;width:min(86vw,360px);height:100dvh;max-height:none;padding:calc(1.4rem + env(safe-area-inset-top,0px)) 1.8rem calc(2rem + env(safe-area-inset-bottom,0px));background:var(--aubergine);color:#fff;border:0;overflow:auto}
+#mnav::backdrop{background:rgba(10,6,22,.6)}
+#mnav .close{display:block;margin-left:auto;background:transparent;color:#fff;border:1.5px solid rgba(205,187,255,.45);border-radius:999px;padding:.5rem 1rem;font:650 .95rem/1 var(--display);cursor:pointer}
+#mnav ul{list-style:none;margin:2.5rem 0 2rem;padding:0;display:grid;gap:.2rem}
+#mnav ul a{display:block;padding:.75rem 0;font-family:var(--display);font-size:1.6rem;font-weight:700;font-stretch:85%;text-decoration:none;border-bottom:1px solid var(--rule-dark)}
+@media (prefers-reduced-motion:no-preference){
+  #mnav{transition:transform .4s var(--ease),display .4s allow-discrete,overlay .4s allow-discrete;transform:translateX(100%)}
+  #mnav:popover-open{transform:none}
+  @starting-style{#mnav:popover-open{transform:translateX(100%)}}
+}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:max(640px,100svh);display:grid;grid-template-rows:1fr auto;overflow:hidden;color:#fff;isolation:isolate;
+  background:
+    radial-gradient(60% 16% at 62% 41%,rgba(255,194,158,.45),transparent 70%),
+    radial-gradient(90% 38% at 55% 41%,rgba(122,79,224,.38),transparent 70%),
+    linear-gradient(180deg,#0F0922 0%,#1D1240 32%,#3A2266 41%,#1A1036 54%,#140C2A 100%)}
+#terrain{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 2.6s ease;z-index:-2}
+#terrain.is-live{opacity:1}
+.hero-scrim{position:absolute;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(0deg,rgba(20,12,42,.9) 0%,rgba(20,12,42,.35) 22%,rgba(20,12,42,0) 45%),
+  linear-gradient(90deg,rgba(20,12,42,.78) 0%,rgba(20,12,42,.35) 38%,rgba(20,12,42,0) 60%)}
+.hero-inner{align-self:end;padding-top:8rem;padding-bottom:2.6rem}
+.hero h1{font-size:clamp(3.1rem,9.6vw,8.4rem);font-weight:820;line-height:.9;letter-spacing:-.02em;max-width:none}
+.hero h1 .line{display:block;overflow:hidden;padding-bottom:.07em}
+.hero h1 .line>span{display:inline-block;font-stretch:84%}
+.hero-sub{margin-top:1.6rem;max-width:54ch;font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--mist)}
+.hero-sub strong{color:#fff}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hero-proof{border-top:1px solid var(--rule-dark)}
+.hero-proof ul{list-style:none;margin-block:0;padding:1.1rem 0 calc(1.1rem + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;font-size:.95rem;color:var(--mist-dim)}
+.hero-proof li{display:flex;align-items:center;gap:.55rem}
+.hero-proof svg{width:18px;height:18px;flex:none;color:var(--first-light)}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero-inner{transform:translateY(calc(var(--hs,0) * -70px));opacity:calc(1 - var(--hs,0) * .9)}
+  .hero h1 .line>span{transform:translateY(108%);font-stretch:58%;animation:rise 1.15s var(--ease) .2s forwards,widen 2.1s var(--ease) .2s forwards}
+  .hero h1 .line:nth-child(2)>span{animation-delay:.36s,.36s}
+  .hero-sub,.hero-ctas,.hero-proof ul{opacity:0;transform:translateY(14px);animation:fadeup .9s var(--ease) forwards}
+  .hero-sub{animation-delay:.8s}
+  .hero-ctas{animation-delay:.95s}
+  .hero-proof ul{animation-delay:1.15s}
+}
+@keyframes rise{to{transform:none}}
+@keyframes widen{to{font-stretch:84%}}
+@keyframes fadeup{to{opacity:1;transform:none}}
+
+/* ===== Founder ===== */
+.founder-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:3rem 5.5rem;align-items:center}
+.portrait{margin:0;perspective:900px}
+.portrait-frame{position:relative;aspect-ratio:4/5;border-radius:28px 28px 28px 120px;overflow:hidden;background:linear-gradient(160deg,var(--violet),var(--aubergine));transform-style:preserve-3d;transition:transform .6s var(--ease);box-shadow:0 34px 60px -32px rgba(36,23,74,.6)}
+.portrait-frame.is-tracking{transition:transform .12s linear}
+.portrait-frame img{width:100%;height:100%;object-fit:cover}
+.portrait-fallback{display:none;position:absolute;inset:0;place-items:center;font-family:var(--display);font-size:clamp(4rem,10vw,7rem);font-weight:820;font-stretch:112%;color:rgba(255,255,255,.92)}
+.no-photo .portrait-fallback{display:grid}
+.no-photo img{display:none}
+.glare{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(circle at var(--gx,50%) var(--gy,30%),rgba(255,255,255,.26),transparent 45%)}
+.portrait:hover .glare{opacity:1}
+.portrait figcaption{margin-top:1.3rem;display:grid;gap:.15rem}
+.portrait figcaption strong{font-family:var(--display);font-size:1.35rem;font-stretch:92%}
+.portrait figcaption span{color:var(--ink-soft)}
+.founder-copy{display:grid;gap:1.4rem;justify-items:start}
+.founder-copy p{max-width:60ch;color:var(--ink-soft)}
+.founder blockquote{margin:.6rem 0;padding-left:1.4rem;border-left:4px solid var(--violet);font-family:var(--display);font-size:clamp(1.3rem,2.2vw,1.7rem);font-weight:520;font-stretch:92%;line-height:1.3;color:var(--ink);max-width:34ch}
+
+/* ===== Tech services ===== */
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1.5rem 4rem;align-items:end}
+.service-list{list-style:none;margin:3.5rem 0 0;padding:0;border-top:1.5px solid var(--ink)}
+.service{position:relative;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,2.4fr);gap:.9rem 2.5rem;align-items:baseline;padding:2rem 0;border-bottom:1px solid var(--rule)}
+.service::before{content:"";position:absolute;inset:0 -1.25rem;border-radius:16px;background:linear-gradient(90deg,rgba(122,79,224,.1),transparent 75%);opacity:0;transition:opacity .35s;pointer-events:none}
+.service:hover::before,.service:focus-within::before{opacity:1}
+.service>*{position:relative}
+.service h3{font-size:clamp(1.35rem,2.4vw,1.85rem);font-stretch:86%;font-weight:730}
+.service p{color:var(--ink-soft)}
+.service .text-link{justify-self:end;text-align:right}
+
+/* ===== Speaking & media ===== */
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin-top:3rem}
+.media-item{display:grid;gap:1rem;align-content:start;justify-items:start;padding:2.2rem;border-radius:24px;background:linear-gradient(160deg,rgba(122,79,224,.2),rgba(122,79,224,.04));border:1px solid var(--rule-dark)}
+.media-item h3{font-size:clamp(1.4rem,2.4vw,1.8rem);font-stretch:88%}
+.media-item p{color:var(--mist-dim);max-width:46ch}
+.media-item .btn{margin-top:.6rem}
+.podcast{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:2.5rem 4rem;align-items:center}
+.podcast-art{aspect-ratio:1;border-radius:28px;background:radial-gradient(80% 80% at 30% 20%,rgba(122,79,224,.85),var(--aubergine));display:grid;place-items:center;padding:14%}
+.podcast-art svg{width:100%;height:auto}
+.stars{display:flex;gap:.25rem;color:var(--first-light)}
+.stars svg{width:22px;height:22px}
+.podcast-title{font-size:clamp(2.4rem,5.4vw,4.4rem);font-stretch:80%;font-weight:820;margin-top:.9rem;line-height:.96;max-width:14ch}
+.podcast p.meta{margin-top:1rem;color:var(--mist-dim);max-width:52ch}
+.podcast .text-link{display:inline-block;margin-top:1.4rem}
+
+/* ===== Gear ===== */
+.gear{color:#fff;background:radial-gradient(70% 70% at 85% 10%,rgba(122,79,224,.55),transparent 62%),var(--aubergine)}
+.gear-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2rem 4rem;align-items:end}
+.gear-copy{display:grid;gap:1.3rem}
+.gear-copy .lede{color:var(--mist)}
+.gear-ribbon{width:96px;height:auto}
+.ribbon-path{stroke-dasharray:1;stroke-dashoffset:0}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .ribbon-path{stroke-dashoffset:1;animation:ribbon linear both;animation-timeline:view();animation-range:entry 10% cover 40%}
+  }
+}
+@keyframes ribbon{to{stroke-dashoffset:0}}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.2rem;margin-top:3rem}
+.product{display:flex;flex-direction:column;padding:.9rem;border-radius:22px;background:rgba(20,12,42,.5);border:1px solid var(--rule-dark);transition:border-color .3s,transform .35s var(--ease)}
+.product:hover,.product:focus-within{border-color:rgba(205,187,255,.55);transform:translateY(-3px)}
+.product-img{aspect-ratio:1;border-radius:14px;background:var(--paper);overflow:hidden;display:grid;place-items:center}
+.product-img img{width:100%;height:100%;object-fit:contain;padding:8%;transition:transform .5s var(--ease)}
+.product:hover .product-img img{transform:scale(1.05)}
+.product-name{font-family:var(--display);font-size:1.05rem;font-weight:660;font-stretch:94%;line-height:1.25;margin-top:1rem}
+.product-meta{margin-top:.4rem;display:flex;flex-wrap:wrap;gap:.15rem .8rem;font-size:.92rem;color:var(--mist-dim)}
+.product-meta strong{color:#fff;font-family:var(--display);font-weight:650}
+.product-foot{margin-top:auto;padding-top:1rem;display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+.product-tag{font-size:.85rem;color:var(--first-light)}
+.btn-buy{min-height:40px;padding:.45rem 1rem;font-size:.92rem;background:var(--first-light);color:var(--night)}
+.btn-buy:hover{background:#FFD6BC}
+.product.skeleton{min-height:340px;background:linear-gradient(100deg,rgba(205,187,255,.05) 30%,rgba(205,187,255,.13) 50%,rgba(205,187,255,.05) 70%) 0 0/300% 100%}
+@media (prefers-reduced-motion:no-preference){.product.skeleton{animation:shimmer 1.4s linear infinite}}
+@keyframes shimmer{to{background-position:-150% 0}}
+.gear-foot{margin-top:2.5rem;display:flex;justify-content:center}
+
+/* ===== FAQ ===== */
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:2.5rem 5rem;align-items:start}
+.faq-list{border-top:1.5px solid var(--ink)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;padding:1.45rem 0;font-family:var(--display);font-weight:660;font-size:clamp(1.1rem,1.8vw,1.3rem);font-stretch:94%;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.plus{flex:none;position:relative;width:36px;height:36px;border-radius:50%;border:1.5px solid var(--ink);color:var(--ink);transition:background-color .3s,border-color .3s,color .3s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;background:currentColor;translate:-50% -50%}
+.plus::after{rotate:90deg;transition:rotate .35s var(--ease)}
+details[open] .plus{background:var(--violet-ink);border-color:var(--violet-ink);color:#fff}
+details[open] .plus::after{rotate:0deg}
+.faq-a{padding:0 3.5rem 1.7rem 0;color:var(--ink-soft);max-width:64ch}
+.faq-a code{font-size:.92em;background:var(--paper-2);padding:.1em .35em;border-radius:5px}
+@supports selector(::details-content){
+  @media (prefers-reduced-motion:no-preference){
+    .faq details::details-content{block-size:0;overflow:hidden;transition:block-size .45s var(--ease),content-visibility .45s allow-discrete}
+    .faq details[open]::details-content{block-size:auto}
+  }
+}
+
+/* ===== Contact ===== */
+.contact-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:3rem 5rem;align-items:start}
+.contact-intro{display:grid;gap:1.3rem}
+.contact-note{color:var(--mist-dim);max-width:44ch;padding-left:1rem;border-left:3px solid var(--first-light)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;padding:clamp(1.5rem,3vw,2.4rem);border-radius:28px;background:rgba(36,23,74,.65);border:1px solid var(--rule-dark)}
+.field{display:grid;gap:.45rem}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--display);font-weight:620;font-size:.98rem;color:var(--mist)}
+.field label .req{color:var(--first-light)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:#fff;background:rgba(255,255,255,.05);border:1.5px solid rgba(205,187,255,.28);border-radius:12px;padding:.85rem 1rem;transition:border-color .2s,background-color .2s}
+.field textarea{min-height:150px;resize:vertical}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23CDBBFF' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.6rem}
+.field select option{color:var(--ink)}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:rgba(205,187,255,.5)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--first-light);background:rgba(255,255,255,.08)}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
+.form-status{color:var(--mist-dim);font-size:.95rem}
+.form-status[data-state="warn"]{color:var(--first-light)}
+.form-status[data-state="ok"]{color:#B9F3D0}
+.form-status a{color:var(--first-light);font-weight:700}
+.btn[disabled]{opacity:.6;cursor:progress;transform:none}
+
+/* ===== Footer ===== */
+.site-footer{background:var(--night-deep);color:var(--mist-dim);padding:2.4rem 0 calc(2.4rem + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule-dark)}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem 2rem;align-items:center;font-size:.95rem}
+.footer-row nav{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem}
+.footer-row a{text-decoration:none}
+.footer-row a:hover{color:#fff;text-decoration:underline;text-underline-offset:.3em}
+
+/* ===== Consent ===== */
+.consent{position:fixed;left:1rem;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;max-width:430px;padding:1.4rem 1.5rem;border-radius:20px;background:var(--aubergine);color:#EDE7FF;border:1px solid var(--rule-dark);box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+.consent h2{font-size:1.15rem;font-stretch:95%;max-width:none}
+.consent p{margin-top:.5rem;font-size:.95rem;color:var(--mist-dim)}
+.consent-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.consent .btn{min-height:42px;padding:.5rem 1.05rem;font-size:.95rem}
+@media (prefers-reduced-motion:no-preference){.consent:not([hidden]){animation:fadeup .6s var(--ease) both}}
+
+/* ===== Mission ===== */
+.avenues{list-style:none;margin:3.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.5rem 2rem}
+.avenue{display:grid;align-content:start;justify-items:start;gap:.8rem;padding-top:1.6rem;border-top:1.5px solid rgba(205,187,255,.35)}
+.avenue svg{width:34px;height:34px;color:var(--lavender)}
+.avenue h3{font-size:1.45rem;font-stretch:88%}
+.avenue p{color:var(--mist-dim)}
+.avenue .text-link{margin-top:.3rem}
+.avenue-tech{border-top-style:dashed}
+.avenue p.avenue-note{color:var(--first-light);font-size:.95rem}
+
+/* ===== Journey timeline ===== */
+.journey-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:3rem 5rem;align-items:start;margin-top:clamp(5rem,10vw,8rem);padding-top:clamp(3rem,6vw,4.5rem);border-top:1px solid var(--rule)}
+.journey-head{position:sticky;top:120px;display:grid;gap:1.2rem}
+.steps{position:relative;view-timeline-name:--steps}
+.steps-list{list-style:none;margin:0;padding:0;display:grid;gap:2.8rem}
+.track,.track-fill{position:absolute;left:43px;top:19px;bottom:19px;width:2px}
+.track{background:var(--rule)}
+.track-fill{left:0;top:0;bottom:0;background:linear-gradient(var(--violet),var(--first-light));transform-origin:top}
+.step{position:relative;display:grid;grid-template-columns:88px 1fr;gap:1.6rem}
+.step-n{width:88px;height:38px;border-radius:999px;display:grid;place-items:center;font-family:var(--display);font-weight:720;font-size:.92rem;font-stretch:92%;background:var(--violet-ink);color:#fff;border:2px solid var(--violet-ink)}
+.step h3{font-size:clamp(1.3rem,2.2vw,1.7rem);font-stretch:86%;margin-top:.25rem}
+.step p{margin-top:.5rem;color:var(--ink-soft);max-width:52ch}
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .track-fill{transform:scaleY(0);animation:draw linear both;animation-timeline:--steps;animation-range:entry 30% cover 75%}
+    .step-n{animation:lit linear both;animation-timeline:view();animation-range:entry 70% cover 42%}
+  }
+}
+@keyframes draw{to{transform:scaleY(1)}}
+@keyframes lit{from{background:var(--paper);color:var(--ink-soft);border-color:rgba(28,20,51,.25)}to{background:var(--violet-ink);color:#fff;border-color:var(--violet-ink)}}
+
+/* ===== Podcast extras ===== */
+.pod-facts{list-style:none;margin:1.4rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.pod-facts li{padding:.45rem .95rem;border-radius:999px;border:1px solid var(--rule-dark);color:var(--mist);font-size:.95rem}
+.pod-facts strong{font-family:var(--display);color:#fff}
+.listen{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.listen .btn{min-height:44px;padding:.6rem 1.15rem}
+.pod-quote{margin:clamp(3.5rem,7vw,5.5rem) 0 0;padding:0}
+.pod-quote p{font-family:var(--display);font-size:clamp(1.9rem,4.4vw,3.4rem);font-weight:640;font-stretch:84%;line-height:1.06;color:#fff;max-width:20ch}
+.pod-quote cite{display:block;margin-top:1rem;font-style:normal;color:var(--mist-dim)}
+.list-title{margin-top:clamp(3.5rem,7vw,5rem);font-size:1.25rem;color:var(--mist)}
+.episode-list{list-style:none;margin:1.2rem 0 0;padding:0;border-top:1.5px solid rgba(205,187,255,.4)}
+.episode{display:grid;grid-template-columns:80px minmax(0,1fr) auto;gap:.5rem 1.8rem;align-items:baseline;padding:1.3rem 0;border-bottom:1px solid var(--rule-dark)}
+.ep-n{font-family:var(--display);font-weight:720;font-stretch:90%;color:var(--first-light)}
+.episode h4{margin:0;font-family:var(--display);font-size:1.25rem;font-weight:680;font-stretch:92%;line-height:1.25}
+.episode p{margin-top:.25rem;color:var(--mist-dim)}
+
+/* ===== Featured ===== */
+.press-list{list-style:none;margin:3.5rem 0 0;padding:0;border-top:1.5px solid var(--ink)}
+.press{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,6fr) minmax(0,1.5fr);gap:.6rem 2.5rem;align-items:baseline;padding:1.9rem 0;border-bottom:1px solid var(--rule)}
+.press-outlet{font-family:var(--display);font-weight:720;font-stretch:90%;font-size:1.05rem;color:var(--violet-ink)}
+.press-outlet span{display:block;font-family:var(--body);font-weight:400;font-stretch:100%;color:var(--ink-soft);font-size:.95rem}
+.press h3{font-size:clamp(1.25rem,2.2vw,1.6rem);font-stretch:88%}
+.press p{margin-top:.45rem;color:var(--ink-soft);max-width:60ch}
+.press .text-link{justify-self:end;text-align:right}
+
+/* ===== Tools callout ===== */
+.care-callout{margin-top:3rem;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1.4rem 3rem;align-items:center;padding:clamp(1.6rem,3.5vw,2.6rem);border-radius:28px 28px 28px 90px;background:var(--aubergine);color:#fff}
+.care-callout h3{font-size:clamp(1.5rem,2.8vw,2.1rem);font-stretch:86%}
+.care-callout p{margin-top:.6rem;color:var(--mist);max-width:62ch}
+
+/* ===== Contact & footer extras ===== */
+.contact-email{color:var(--mist)}
+.contact-email a{color:var(--first-light);font-weight:700}
+.footer-stack{display:grid;gap:1.4rem}
+.footer-social{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem}
+.footer-credit{font-size:.9rem}
+
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .founder-grid,.journey-grid,.faq-grid,.contact-grid,.gear-head,.podcast,.section-head,.press,.care-callout{grid-template-columns:1fr}
+  .journey-head{position:static}
+  .press .text-link{justify-self:start;text-align:left}
+  .avenues{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .service{grid-template-columns:1fr}
+  .service .text-link{justify-self:start;text-align:left}
+  .portrait{max-width:420px}
+  .podcast-art{max-width:260px}
+}
+@media (max-width:640px){
+  .media-grid,.avenues{grid-template-columns:1fr}
+  .episode{grid-template-columns:1fr}
+  .step{grid-template-columns:76px 1fr;gap:1.1rem}
+  .step-n{width:76px;font-size:.85rem}
+  .track{left:37px}
+  .form{grid-template-columns:1fr}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
+  .product{padding:.65rem}
+  .product-foot{flex-direction:column;align-items:stretch}
+  .gear-ribbon{display:none}
+  .faq-a{padding-right:0}
+  .hero-proof ul{gap:.5rem 1.4rem;font-size:.9rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important}
+}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-brand-500 selection:text-white">
+<body>
+<a class="skip" href="#main-content">Skip to main content</a>
 
-  <!-- ADA Skip to Main Content Link -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-700 focus:text-white focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-400">
-    Skip to main content
-  </a>
+<header class="site-header" id="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Crohn's Veteran home">
+      <img src="assets/images/header-logo.png?v=3" alt="" width="40" height="40">
+      <span class="brand-mark" aria-hidden="true">CV</span>
+      <span>Crohn's Veteran</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#tech-solutions">Tools</a></li>
+        <li><a href="#services">Speaking</a></li>
+        <li><a href="#gear">Store</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#connect">Get in touch</a>
+    <button class="menu-btn" type="button" popovertarget="mnav" aria-controls="mnav">Menu</button>
+  </div>
+</header>
 
-  <!-- Header / Navigation -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200" role="banner">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded-lg p-1" aria-label="Crohn's Veteran Home">
-        <img 
-          src="assets/images/header-logo.png?v=3" 
-          alt="Crohn's Veteran Logo" 
-          class="h-9 sm:h-10 w-auto object-contain transition duration-200 group-hover:scale-105"
-          onerror="this.src='assets/images/logo.png'"
-        />
-        <span class="font-black text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-brand-700 via-purple-700 to-indigo-800">
-          Crohn's Veteran
-        </span>
-      </a>
+<div id="mnav" popover>
+  <button class="close" type="button" popovertarget="mnav" popovertargetaction="hide">Close</button>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#podcast">Podcast</a></li>
+    <li><a href="#featured">Featured</a></li>
+    <li><a href="#tech-solutions">Tools</a></li>
+    <li><a href="#services">Speaking</a></li>
+    <li><a href="#gear">Store</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="btn btn-primary" href="#connect">Get in touch</a>
+</div>
 
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600" aria-label="Primary Navigation">
-        <a href="#about" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">About</a>
-        <a href="#tech-solutions" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">Tech & AI</a>
-        <a href="#gear" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">Store</a>
-        <a href="#how-it-works" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">Process</a>
-        <a href="#services" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">Services</a>
-        <a href="#faq" class="hover:text-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded px-1 transition">FAQ</a>
-      </nav>
+<main id="main-content">
 
-      <div class="flex items-center gap-3">
-        <a href="#connect" class="px-4 py-2 text-xs sm:text-sm font-bold rounded-xl bg-brand-600 hover:bg-brand-700 text-white transition shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-600">
-          Get in Touch
-        </a>
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <canvas id="terrain" aria-hidden="true"></canvas>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <h1 id="hero-title">
+        <span class="line"><span>Resilience beyond</span></span>
+        <span class="line"><span>the diagnosis.</span></span>
+      </h1>
+      <p class="hero-sub"><strong>Crohn's Veteran exists for the IBD community:</strong> people living with Crohn's and colitis, and everyone who loves and supports them. We share real stories, advocate for voices that too often go unheard, fund awareness through official gear, and build tools shaped by lived experience.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#podcast">Hear the stories</a>
+        <a class="btn btn-ghost" href="#gear">Shop awareness gear</a>
       </div>
     </div>
-  </header>
+    <div class="hero-proof">
+      <ul class="wrap">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>75-episode Crohn's Veteran Podcast</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>Named a top Crohn's podcast for 2026</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-5 8 5M4 17l8-5 8 5"/></svg>Founded by an Air Force veteran</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Living with Crohn's since age 14</li>
+      </ul>
+    </div>
+  </section>
 
-  <main id="main-content">
-    <!-- 1: HERO -->
-    <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden bg-white border-b border-slate-200" aria-labelledby="hero-heading">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 text-xs font-bold uppercase tracking-wider mb-6">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5" aria-hidden="true"></i>
-          Official Advocacy & Media Solutions
-        </div>
-        <h1 id="hero-heading" class="text-4xl sm:text-6xl font-black text-slate-900 tracking-tight leading-tight sm:leading-none mb-6">
-          Resilience Beyond the Diagnosis. <br />
-          <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-indigo-600">
-            Empowering the Global IBD Community.
-          </span>
-        </h1>
-        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
-          Uniting lived advocacy with modern digital engineering. We build purposeful web applications, mobile tools, and AI solutions while funding community outreach through official awareness gear.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#gear" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md hover:shadow-brand-500/25 transition flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-600">
-            <span>Shop Awareness Gear</span>
-            <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
-          </a>
-          <a href="#tech-solutions" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-400">
-            Explore Tech & Media Services
-          </a>
-        </div>
+  <!-- ===== Mission ===== -->
+  <section class="section night mission" id="mission" aria-labelledby="mission-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="mission-title">Community first. Technology is one way we show up.</h2>
+        <p class="lede">Living with IBD can be isolating. Everything Crohn's Veteran does points back to the same people: those living with Crohn's and colitis, and those who stand beside them.</p>
       </div>
-    </section>
+      <ul class="avenues">
+        <li class="avenue">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="12" y="4" width="8" height="15" rx="4"/><path d="M7 15a9 9 0 0 0 18 0M16 24v4M11 28h10"/></svg>
+          <h3>Real stories</h3>
+          <p>Three years of honest conversations with patients, caregivers, doctors, and advocates from around the world.</p>
+          <a class="text-link" href="#podcast">Explore the podcast</a>
+        </li>
+        <li class="avenue">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M5 13v6h5l10 6V7L10 13z"/><path d="M24 12a5 5 0 0 1 0 8" stroke-linecap="round"/></svg>
+          <h3>Advocacy &amp; speaking</h3>
+          <p>Bringing more men's voices, especially men of color, and veterans' experiences into the rooms where IBD is discussed.</p>
+          <a class="text-link" href="#services">Book Jordan</a>
+        </li>
+        <li class="avenue">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M11 4l-7 4 3 6 3-1.5V28h12V12.5l3 1.5 3-6-7-4c-1 2-2.6 3-5 3s-4-1-5-3z"/></svg>
+          <h3>Awareness gear</h3>
+          <p>Every purchase funds outreach, content, and digital health advocacy for the community.</p>
+          <a class="text-link" href="#gear">Shop the store</a>
+        </li>
+        <li class="avenue avenue-tech">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 9l-7 7 7 7M21 9l7 7-7 7M18 6l-4 20"/></svg>
+          <h3>Tools &amp; technology</h3>
+          <p>Apps, websites, and AI tools built for the IBD community and the people who care about them.</p>
+          <p class="avenue-note">One avenue, not the whole mission.</p>
+          <a class="text-link" href="#tech-solutions">See what we build</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- 2: SOCIAL PROOF #1 -->
-    <section class="py-6 bg-slate-100/70 border-b border-slate-200" aria-label="Platform Highlights">
-      <div class="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6 sm:gap-12 text-slate-600 text-xs font-bold uppercase tracking-widest text-center">
-        <span class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4 text-brand-600" aria-hidden="true"></i> Featured Top Crohn's Podcast</span>
-        <span class="flex items-center gap-2"><i data-lucide="code-2" class="w-4 h-4 text-brand-600" aria-hidden="true"></i> Modern App Development</span>
-        <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-brand-600" aria-hidden="true"></i> AI Workflow Solutions</span>
-        <span class="flex items-center gap-2"><i data-lucide="heart-handshake" class="w-4 h-4 text-brand-600" aria-hidden="true"></i> Global IBD Advocacy</span>
-      </div>
-    </section>
-
-    <!-- 3: PAIN POINT SECTION -->
-    <section class="py-16 md:py-20 bg-white border-b border-slate-200" aria-labelledby="challenges-heading">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600">The Modern Challenge</span>
-          <h2 id="challenges-heading" class="text-3xl font-black text-slate-900 mt-1">Facing Battles Without the Right Digital Tools?</h2>
+  <!-- ===== Founder + journey ===== -->
+  <section class="section paper founder" id="about" aria-labelledby="about-title">
+    <div class="wrap founder-grid">
+      <figure class="portrait" data-tilt>
+        <div class="portrait-frame">
+          <img src="assets/images/founder.jpg" alt="Portrait of Jordan B. McConnell, founder of Crohn's Veteran" width="560" height="700" loading="lazy" decoding="async">
+          <span class="portrait-fallback" aria-hidden="true">JM</span>
+          <span class="glare" aria-hidden="true"></span>
         </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-            <div class="w-10 h-10 rounded-xl bg-purple-100 text-brand-700 flex items-center justify-center mb-4 font-bold" aria-hidden="true">01</div>
-            <h3 class="font-bold text-slate-900 mb-2">Fragmented Tech Tools</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Living with chronic health needs requires tailored systems. Off-the-shelf software often ignores the unique workflow and accessibility realities of individuals managing chronic disease.
-            </p>
-          </div>
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-            <div class="w-10 h-10 rounded-xl bg-purple-100 text-brand-700 flex items-center justify-center mb-4 font-bold" aria-hidden="true">02</div>
-            <h3 class="font-bold text-slate-900 mb-2">Isolation & Stigma</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Explaining flare-ups and day-to-day boundaries remains difficult. Advocates need strong digital presence, storytelling channels, and impactful branding to educate the world.
-            </p>
-          </div>
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
-            <div class="w-10 h-10 rounded-xl bg-purple-100 text-brand-700 flex items-center justify-center mb-4 font-bold" aria-hidden="true">03</div>
-            <h3 class="font-bold text-slate-900 mb-2">Complex AI Integration</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Many creators and health advocates want to harness artificial intelligence to streamline their projects or ventures, but lack reliable technical engineering to build it securely.
-            </p>
-          </div>
-        </div>
+        <figcaption>
+          <strong>Jordan B. McConnell</strong>
+          <span>Founder. Air Force veteran, cloud engineer, and podcaster.</span>
+        </figcaption>
+      </figure>
+      <div class="founder-copy">
+        <h2 id="about-title">A Crohn's veteran in every sense</h2>
+        <p class="lede">Jordan B. McConnell was 14 when emergency surgery revealed Crohn's disease. He went on to serve in the U.S. Air Force, until Crohn's returned and ended the military career he loved. What he did next became Crohn's Veteran.</p>
+        <p>When Jordan looked for men, especially men of color, talking openly about IBD, he found almost no one. So he started sharing his own life online, then built a podcast and a community so others would feel less alone.</p>
+        <p>By day, Jordan is a cloud engineer at New American Funding. He brings that experience back to the community, building tools and products for people with IBD and everyone who supports them.</p>
+        <blockquote><p>“Building systems that give people clarity, independence, and pride—no matter what health battle they are fighting.”</p></blockquote>
+        <a class="btn btn-violet" href="#podcast">Hear Jordan's story</a>
       </div>
-    </section>
+    </div>
 
-    <!-- 4: VALUE PROP & FOUNDER SECTION -->
-    <section id="about" class="py-16 md:py-20 bg-slate-50 border-b border-slate-200" aria-labelledby="about-heading">
-      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div class="wrap journey-grid">
+      <div class="journey-head">
+        <h2 id="journey-title">The journey</h2>
+        <p class="lede">From a diagnosis at 14 to a community built for others.</p>
+      </div>
+      <div class="steps">
+        <span class="track" aria-hidden="true"><span class="track-fill"></span></span>
+        <ol class="steps-list" aria-labelledby="journey-title">
+          <li class="step"><span class="step-n">Age 14</span><div><h3>Diagnosed in ninth grade</h3><p>An emergency surgery ends with a Crohn's diagnosis.</p></div></li>
+          <li class="step"><span class="step-n">USAF</span><div><h3>Serving in the Air Force</h3><p>Rises from Airman Basic to Staff Sergeant. At Langley Air Force Base, he helps run network operations supporting about 100,000 people across 15 bases.</p></div></li>
+          <li class="step"><span class="step-n">Guard</span><div><h3>Air National Guard</h3><p>Keeps serving in California and Nebraska while working in civilian tech support.</p></div></li>
+          <li class="step"><span class="step-n">2009</span><div><h3>Crohn's returns</h3><p>Hospital stays and another major surgery follow. Ruled non-deployable, he receives an honorable discharge.</p></div></li>
+          <li class="step"><span class="step-n">Rebuild</span><div><h3>Starting over in tech</h3><p>Earns a bachelor's degree and works his way from tech support to network administration to cloud engineering.</p></div></li>
+          <li class="step"><span class="step-n">2020</span><div><h3>The podcast launches</h3><p>After a year of sharing his story on Instagram, Jordan starts the Crohn's Veteran Podcast with co-hosts CJ “Papuro” Cabrera and Renika Wood.</p></div></li>
+          <li class="step"><span class="step-n">2023</span><div><h3>75 episodes later</h3><p>The podcast signs off on World IBD Day with its final episode.</p></div></li>
+          <li class="step"><span class="step-n">Today</span><div><h3>Building for the community</h3><p>A cloud engineer at New American Funding, Jordan builds tools and products for the IBD community and the people who care about them.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Podcast ===== -->
+  <section class="section night" id="podcast" aria-labelledby="podcast-title">
+    <div class="wrap">
+      <div class="podcast">
+        <div class="podcast-art" aria-hidden="true">
+          <svg viewBox="0 0 236 120">
+            <defs><linearGradient id="wave" x1="0" x2="1"><stop offset="0" stop-color="#CDBBFF"/><stop offset="1" stop-color="#FFC29E"/></linearGradient></defs>
+            <g fill="url(#wave)">
+              <rect x="0" y="50" width="6" height="20" rx="3"/><rect x="10" y="38" width="6" height="44" rx="3"/><rect x="20" y="25" width="6" height="70" rx="3"/><rect x="30" y="41" width="6" height="38" rx="3"/>
+              <rect x="40" y="12" width="6" height="96" rx="3"/><rect x="50" y="30" width="6" height="60" rx="3"/><rect x="60" y="45" width="6" height="30" rx="3"/><rect x="70" y="18" width="6" height="84" rx="3"/>
+              <rect x="80" y="34" width="6" height="52" rx="3"/><rect x="90" y="6" width="6" height="108" rx="3"/><rect x="100" y="27" width="6" height="66" rx="3"/><rect x="110" y="40" width="6" height="40" rx="3"/>
+              <rect x="120" y="15" width="6" height="90" rx="3"/><rect x="130" y="31" width="6" height="58" rx="3"/><rect x="140" y="47" width="6" height="26" rx="3"/><rect x="150" y="23" width="6" height="74" rx="3"/>
+              <rect x="160" y="10" width="6" height="100" rx="3"/><rect x="170" y="36" width="6" height="48" rx="3"/><rect x="180" y="29" width="6" height="62" rx="3"/><rect x="190" y="43" width="6" height="34" rx="3"/>
+              <rect x="200" y="20" width="6" height="80" rx="3"/><rect x="210" y="39" width="6" height="42" rx="3"/><rect x="220" y="32" width="6" height="56" rx="3"/><rect x="230" y="49" width="6" height="22" rx="3"/>
+            </g>
+          </svg>
+        </div>
         <div>
-          <span class="text-xs font-extrabold uppercase tracking-widest text-brand-600">Founder & Philosophy</span>
-          <h2 id="about-heading" class="text-3xl font-black text-slate-900 mt-2 mb-4 leading-snug">
-            Lived Experience Combined with Cloud & AI Engineering
-          </h2>
-          <p class="text-slate-600 text-sm leading-relaxed mb-4">
-            Crohn's Veteran was created to redefine what chronic illness recovery looks like. Founded by Air Force veteran and Cloud Engineer Jordan McConnell, our mission couples authentic community advocacy with modern software architecture.
-          </p>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Whether speaking on global panels, publishing media, or architecting digital solutions for advocates, we demonstrate that a chronic diagnosis never limits your capacity to build world-class products.
-          </p>
-          <div class="flex items-center gap-3">
-            <a href="#tech-solutions" class="inline-flex items-center gap-2 text-sm font-bold text-brand-600 hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
-              Explore Technical Services <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
-            </a>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5 stars on Apple Podcasts">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/></svg>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/></svg>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/></svg>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/></svg>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.9z"/></svg>
           </div>
-        </div>
-        
-        <!-- Founder Profile Card with founder.jpg -->
-        <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm text-center sm:text-left flex flex-col sm:flex-row gap-6 items-center">
-          <img 
-            src="assets/images/founder.jpg" 
-            alt="Portrait of Jordan B. McConnell, founder of Crohn's Veteran" 
-            class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover border-2 border-brand-500 shadow-md shrink-0"
-          />
-          <div>
-            <div class="flex items-center gap-2 mb-1 justify-center sm:justify-start">
-              <h3 class="font-extrabold text-slate-950 text-lg">Jordan B. McConnell</h3>
-              <span class="px-2 py-0.5 rounded-full bg-brand-100 text-brand-700 text-[10px] font-bold">Founder</span>
-            </div>
-            <p class="text-xs font-semibold text-brand-600 mb-3">Cloud Engineer • Veteran • Podcaster</p>
-            <p class="text-xs text-slate-600 italic leading-relaxed">
-              "Building systems that give people clarity, independence, and pride—no matter what health battle they are fighting."
-            </p>
+          <h2 class="podcast-title" id="podcast-title">The Crohn's Veteran Podcast</h2>
+          <p class="meta">From April 2020 to World IBD Day 2023, Jordan and co-hosts CJ “Papuro” Cabrera and Renika Wood sat down with people living with Crohn's and colitis, along with the doctors, caregivers, authors, and advocates beside them. The full archive is free to stream.</p>
+          <ul class="pod-facts">
+            <li><strong>75</strong> episodes</li>
+            <li><strong>5.0</strong> on Apple Podcasts</li>
+            <li>In Feedspot's best Crohn's disease podcasts of 2026</li>
+          </ul>
+          <div class="listen">
+            <a class="btn btn-primary" href="https://podcasts.apple.com/us/podcast/crohns-veteran-podcast/id1515327063" target="_blank" rel="noopener">Apple Podcasts<span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="btn btn-ghost" href="https://open.spotify.com/show/5Nrg39heAdODkBFIzD5B1j" target="_blank" rel="noopener">Spotify<span class="sr-only"> (opens in a new tab)</span></a>
+            <a class="btn btn-ghost" href="https://www.youtube.com/channel/UCvmWubDgKaO1DWD1t_gwzsg" target="_blank" rel="noopener">YouTube<span class="sr-only"> (opens in a new tab)</span></a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- 5: PAID MEDIA & TECH SOLUTIONS -->
-    <section id="tech-solutions" class="py-16 md:py-24 bg-white border-b border-slate-200" aria-labelledby="tech-heading">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Digital Innovation Lab</span>
-          <h2 id="tech-heading" class="text-3xl font-black text-slate-900 mt-1">Paid Media & Technology Solutions</h2>
-          <p class="text-slate-600 text-sm mt-3">
-            Empowering advocates, wellness creators, and businesses impacted by chronic conditions with high-performance software engineering and AI automation.
-          </p>
-        </div>
+      <blockquote class="pod-quote">
+        <p>“To let others know they are not alone.”</p>
+        <cite>Jordan, describing the show's purpose in its final episode</cite>
+      </blockquote>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-600 flex items-center justify-center mb-4" aria-hidden="true">
-                <i data-lucide="layout" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Modern Websites & Landing Pages</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                Fast, responsive, accessible websites optimized for conversion, SEO, e-commerce integration, and community engagement.
-              </p>
-            </div>
-            <a href="#connect" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
-              <span>Inquire Architecture</span>
-              <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
+      <h3 class="list-title">Start with these episodes</h3>
+      <ol class="episode-list">
+        <li class="episode">
+          <span class="ep-n">Ep 17</span>
+          <div><h4>Natalie Hayden</h4><p>The “Lights, Camera, Crohn's” blogger and IBD advocate. 2020</p></div>
+          <a class="text-link" href="https://creators.spotify.com/pod/profile/crohns-veteran-podcast/episodes/Episode-17---Lights--Camera--Crohns-Blogger-and-IBD-Advocate-Natalie-Hayden-ehngos" target="_blank" rel="noopener">Listen<span class="sr-only"> to episode 17 (opens in a new tab)</span></a>
+        </li>
+        <li class="episode">
+          <span class="ep-n">Ep 36</span>
+          <div><h4>Career transitions with Crohn's</h4><p>Jordan on changing careers and working full-time with Crohn's disease. 2021</p></div>
+          <a class="text-link" href="https://podcasts.apple.com/ie/podcast/episode-36-founder-jordan-mcconnell-speaks-on-career/id1515327063?i=1000506727725" target="_blank" rel="noopener">Listen<span class="sr-only"> to episode 36 (opens in a new tab)</span></a>
+        </li>
+        <li class="episode">
+          <span class="ep-n">Ep 59</span>
+          <div><h4>Daanish Hazarika</h4><p>Ulcerative colitis warrior and men's health advocate. 2021</p></div>
+          <a class="text-link" href="https://podcasts.apple.com/us/podcast/episode-59-daanish-hazarika-ulcerative-colitis-warrior/id1515327063?i=1000533058978" target="_blank" rel="noopener">Listen<span class="sr-only"> to episode 59 (opens in a new tab)</span></a>
+        </li>
+        <li class="episode">
+          <span class="ep-n">Ep 73</span>
+          <div><h4>Ariel Jordan</h4><p>A resident gastroenterologist who also lives with colitis. 2023</p></div>
+          <a class="text-link" href="https://creators.spotify.com/pod/profile/crohns-veteran-podcast/episodes/Episode-73-Video-Version---Ariel-Jordan-Resident-Gastroenterologis--Colitis-Warrior-e20sos4" target="_blank" rel="noopener">Listen<span class="sr-only"> to episode 73 (opens in a new tab)</span></a>
+        </li>
+        <li class="episode">
+          <span class="ep-n">Ep 75</span>
+          <div><h4>Final episode: World IBD Day 2023</h4><p>Jordan looks back on three years of the show. 2023</p></div>
+          <a class="text-link" href="https://podcasts.apple.com/us/podcast/crohns-veteran-podcast/id1515327063" target="_blank" rel="noopener">Listen<span class="sr-only"> to the final episode (opens in a new tab)</span></a>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-600 flex items-center justify-center mb-4" aria-hidden="true">
-                <i data-lucide="smartphone" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Mobile Application Development</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                Native Android & cross-platform apps built with modern frameworks (Jetpack Compose, Kotlin) tailored for health routines and user education.
-              </p>
-            </div>
-            <a href="#connect" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
-              <span>Request Mobile Scope</span>
-              <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-600 flex items-center justify-center mb-4" aria-hidden="true">
-                <i data-lucide="bot" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">AI Tools & Workflow Automations</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                Custom LLM integrations, content generation pipelines, intelligent intake bots, and prompt systems that save time and reduce manual toil.
-              </p>
-            </div>
-            <a href="#connect" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
-              <span>Consult AI Solutions</span>
-              <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-500 hover:shadow-md transition flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-600 flex items-center justify-center mb-4" aria-hidden="true">
-                <i data-lucide="cloud-cog" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-bold text-slate-900 text-base mb-2">Cloud Architecture & FinOps</h3>
-              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
-                Robust hosting blueprints, GitHub Actions CI/CD automation, scalable cloud setups, and cloud spend optimization.
-              </p>
-            </div>
-            <a href="#connect" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded">
-              <span>Get Cloud Plan</span>
-              <span aria-hidden="true">&rarr;</span>
-            </a>
-          </div>
-        </div>
+  <!-- ===== Featured ===== -->
+  <section class="section paper-2 featured" id="featured" aria-labelledby="featured-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="featured-title">Featured conversations</h2>
+        <p class="lede">Jordan has joined other hosts to talk about IBD, military service, fatherhood, and building a career with a chronic illness.</p>
       </div>
-    </section>
+      <ul class="press-list">
+        <li class="press">
+          <p class="press-outlet">About IBD Podcast<span>2021</span></p>
+          <div><h3>Episode 96: Fatherhood and IBD</h3><p>With host Amber J. Tresca, Jordan talks about his diagnosis at 14, his Air Force service and discharge, being a dad while living with Crohn's, and why men's voices matter in IBD advocacy.</p></div>
+          <a class="text-link" href="https://aboutibd.com/2021/06/20/about-ibd-podcast-episode-96-fatherhood-and-ibd-with-jordan-mcconnell-of-crohns-veteran/" target="_blank" rel="noopener">Listen<span class="sr-only"> on About IBD (opens in a new tab)</span></a>
+        </li>
+        <li class="press">
+          <p class="press-outlet">About IBD<span>2021</span></p>
+          <div><h3>Men's health on About IBD</h3><p>A roundup of the show's men's health conversations, including Jordan's episode.</p></div>
+          <a class="text-link" href="https://aboutibd.com/2021/06/28/mens-health-on-about-ibd-podcast/" target="_blank" rel="noopener">Read<span class="sr-only"> on About IBD (opens in a new tab)</span></a>
+        </li>
+        <li class="press">
+          <p class="press-outlet">Causepods<span>2020</span></p>
+          <div><h3>Leading a fight with Jordan McConnell</h3><p>Why Jordan started a podcast about Crohn's, why a co-host model made sense, and what it means to be a Crohn's veteran.</p></div>
+          <a class="text-link" href="https://causepods.org/podcast/jordan-mcconnell-crohns-veteran-podcast/" target="_blank" rel="noopener">Listen<span class="sr-only"> on Causepods (opens in a new tab)</span></a>
+        </li>
+        <li class="press">
+          <p class="press-outlet">Career Downloads Podcast<span>2026</span></p>
+          <div><h3>Episode 68: From Air Force to cloud engineer</h3><p>Jordan's path from network operations at Langley to cloud engineering, while living with a chronic illness.</p></div>
+          <a class="text-link" href="https://careerdownloads.com/episodes/from-air-force-to-cloud-engineer-with-jordan-mcconnell-ep068/" target="_blank" rel="noopener">Listen<span class="sr-only"> on Career Downloads (opens in a new tab)</span></a>
+        </li>
+        <li class="press">
+          <p class="press-outlet">Feedspot<span>2026</span></p>
+          <div><h3>Best Crohn's disease podcasts of 2026</h3><p>The Crohn's Veteran Podcast is featured in Feedspot's 2026 list of Crohn's disease podcasts.</p></div>
+          <a class="text-link" href="https://podcast.feedspot.com/crohns_disease_podcasts/" target="_blank" rel="noopener">View list<span class="sr-only"> on Feedspot (opens in a new tab)</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- 6: SERVICES / ENGAGEMENT -->
-    <section id="services" class="py-16 md:py-20 bg-slate-50 border-b border-slate-200" aria-labelledby="services-heading">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Collaborations & Appearances</span>
-          <h2 id="services-heading" class="text-3xl font-black text-slate-900 mt-1">Speaking & Media Services</h2>
-        </div>
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between hover:border-brand-400 transition">
-            <div>
-              <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Keynotes & Panels</span>
-              <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Speaking & Guest Appearances</h3>
-              <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                Healthcare conferences, corporate wellness presentations, patient summit panels, and veteran disability awareness discussions.
-              </p>
-            </div>
-            <a href="#connect" class="w-full text-center py-2.5 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-              Book Speaking
-            </a>
-          </div>
-
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between hover:border-brand-400 transition">
-            <div>
-              <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Partnerships & Press</span>
-              <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Business & Media Requests</h3>
-              <p class="text-sm text-slate-600 mb-6 leading-relaxed">
-                Guest podcast appearances, healthcare panel interviews, brand collaborations, and cross-platform awareness campaigns.
-              </p>
-            </div>
-            <a href="#connect" class="w-full text-center py-2.5 rounded-lg bg-slate-100 hover:bg-brand-600 hover:text-white text-slate-800 text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-              Submit Media Inquiry
-            </a>
-          </div>
-        </div>
+  <!-- ===== Tools ===== -->
+  <section class="section paper tech" id="tech-solutions" aria-labelledby="tech-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="tech-title">Building tools for the IBD community</h2>
+        <p class="lede">And for the people who care about them, including tech needs that have nothing to do with IBD. Technology is one of the ways Crohn's Veteran serves the community, and every project is built with lived experience.</p>
       </div>
-    </section>
-
-    <!-- 7: SOCIAL PROOF / PODCAST REVIEW SECTION (FEEDSPOT RECOGNITION) -->
-    <section class="py-16 bg-purple-950 text-white" aria-labelledby="podcast-recognition-heading">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-800/80 border border-purple-600 text-amber-300 text-xs font-bold uppercase tracking-wider mb-6">
-          <i data-lucide="trophy" class="w-4 h-4 text-amber-400" aria-hidden="true"></i>
-          Recognized as a Top Crohn's Disease Podcast
+      <ul class="service-list">
+        <li class="service">
+          <h3>Tools for life with IBD</h3>
+          <p>Apps and digital tools shaped by real routines: education, tracking, appointment prep, and the everyday logistics of living with a chronic condition.</p>
+          <a class="text-link" href="#connect" data-inquiry="Custom Web &amp; App Development">Share a tool idea</a>
+        </li>
+        <li class="service">
+          <h3>Websites for advocates &amp; organizations</h3>
+          <p>Fast, accessible websites for advocates, creators, nonprofits, and small businesses that serve the IBD community.</p>
+          <a class="text-link" href="#connect" data-inquiry="Custom Web &amp; App Development">Ask about a website</a>
+        </li>
+        <li class="service">
+          <h3>Mobile apps</h3>
+          <p>Native Android and cross-platform apps built with modern frameworks like Jetpack Compose and Kotlin.</p>
+          <a class="text-link" href="#connect" data-inquiry="Custom Web &amp; App Development">Scope a mobile app</a>
+        </li>
+        <li class="service">
+          <h3>AI tools &amp; automations</h3>
+          <p>Custom AI assistants, content pipelines, and intake tools that save time for advocates, caregivers, and small teams.</p>
+          <a class="text-link" href="#connect" data-inquiry="AI Tools &amp; Workflows">Talk through AI options</a>
+        </li>
+      </ul>
+      <div class="care-callout">
+        <div>
+          <h3>Not living with IBD yourself?</h3>
+          <p>If you support someone in this community, as a caregiver, partner, parent, friend, or employer, and you need a website, an app, or a smarter workflow for anything at all, we'd love to build it with you.</p>
         </div>
-
-        <div class="flex justify-center gap-1 text-amber-400 mb-4" aria-hidden="true">
-          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-          <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-        </div>
-        <span class="sr-only">Rated 5 out of 5 stars</span>
-
-        <h2 id="podcast-recognition-heading" class="text-xl sm:text-2xl font-bold tracking-tight text-white mb-2">
-          Crohn's Veteran Podcast
-        </h2>
-        <p class="text-sm font-extrabold uppercase tracking-widest text-purple-200">
-          Hosted by Jordan McConnell
-        </p>
-
-        <div class="mt-6 pt-6 border-t border-purple-800/60 max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-purple-200">
-          <span>Featured among the industry's best IBD podcasts:</span>
-          <a 
-            href="https://podcast.feedspot.com/crohns_disease_podcasts/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="inline-flex items-center gap-1.5 font-bold text-amber-300 hover:text-amber-200 underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded p-0.5"
-          >
-            <span>View Feedspot Top Rankings</span>
-            <i data-lucide="external-link" class="w-3.5 h-3.5" aria-hidden="true"></i>
-            <span class="sr-only">(opens in a new tab)</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8: HOW IT WORKS -->
-    <section id="how-it-works" class="py-16 md:py-20 bg-white border-b border-slate-200" aria-labelledby="roadmap-heading">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-14">
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Clear Collaboration</span>
-          <h2 id="roadmap-heading" class="text-3xl font-black text-slate-900 mt-1">How We Collaborate</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-          <div>
-            <div class="w-12 h-12 rounded-full bg-brand-600 text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm" aria-hidden="true">
-              1
-            </div>
-            <h3 class="font-bold text-slate-900 mb-2">Scope & Vision</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Reach out via the form with your concept—whether you need a custom app, an AI pipeline, or a keynote speaker.
-            </p>
-          </div>
-          <div>
-            <div class="w-12 h-12 rounded-full bg-brand-600 text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm" aria-hidden="true">
-              2
-            </div>
-            <h3 class="font-bold text-slate-900 mb-2">Execution & Build</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We architect the software, establish clean integrations, or finalize event preparations with clear timelines.
-            </p>
-          </div>
-          <div>
-            <div class="w-12 h-12 rounded-full bg-brand-600 text-white font-black text-lg flex items-center justify-center mx-auto mb-4 shadow-sm" aria-hidden="true">
-              3
-            </div>
-            <h3 class="font-bold text-slate-900 mb-2">Launch & Inspire</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Deploy your technology or deliver impactful media that strengthens your brand and supports the Crohn's community.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9: PRODUCT CATALOG (AWARENESS MERCH) -->
-    <section id="gear" class="py-16 md:py-24 bg-slate-50 border-b border-slate-200" aria-labelledby="store-heading">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Awareness Apparel & Merch</span>
-          <h2 id="store-heading" class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Wear Your Purple Support</h2>
-          <p class="text-slate-600 text-sm mt-3">
-            Every item purchased directly funds awareness initiatives, podcasts, and digital health advocacy.
-          </p>
-        </div>
-
-        <div id="printful-product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" aria-live="polite">
-          <div class="col-span-full text-center py-10">
-            <div class="inline-block w-8 h-8 border-4 border-brand-500 border-t-transparent rounded-full animate-spin" role="status">
-              <span class="sr-only">Loading gear catalog...</span>
-            </div>
-            <p class="text-slate-500 text-xs mt-3">Loading gear catalog...</p>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center">
-          <a href="https://crohnsveteranstore.printful.me/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-xs font-bold shadow-md transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-slate-950">
-            <span>View All Items on Official Quick Store</span>
-            <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
-            <span class="sr-only">(opens in a new tab)</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10: FAQ SECTION -->
-    <section id="faq" class="py-16 md:py-20 bg-white border-b border-slate-200" aria-labelledby="faq-heading">
-      <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <span class="text-xs font-bold text-brand-600 uppercase tracking-widest">Clear Answers</span>
-          <h2 id="faq-heading" class="text-3xl font-black text-slate-900 mt-1">Frequently Asked Questions</h2>
-        </div>
-        <div class="space-y-4" id="faq-accordion">
-          
-          <!-- FAQ 1 -->
-          <div class="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden">
-            <button 
-              type="button"
-              class="w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex justify-between items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500" 
-              onclick="toggleFaq(1)"
-              id="faq-btn-1"
-              aria-expanded="false"
-              aria-controls="faq-content-1"
-            >
-              <span>How do I reach Jordan for web, mobile, or AI solution development?</span>
-              <i data-lucide="chevron-down" id="faq-icon-1" class="w-4 h-4 text-slate-500 transition-transform" aria-hidden="true"></i>
-            </button>
-            <div id="faq-content-1" role="region" aria-labelledby="faq-btn-1" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Use the contact form below and select <strong>"Custom Web & App Development"</strong> or <strong>"AI Tools & Workflows"</strong>. Please provide a high-level overview of your timeline, objectives, and tech stack. Jordan reviews technical scopes directly and will follow up with initial scheduling within 24–48 hours.
-            </div>
-          </div>
-
-          <!-- FAQ 2 -->
-          <div class="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden">
-            <button 
-              type="button"
-              class="w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex justify-between items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500" 
-              onclick="toggleFaq(2)"
-              id="faq-btn-2"
-              aria-expanded="false"
-              aria-controls="faq-content-2"
-            >
-              <span>How does purchasing and checkout work for awareness gear?</span>
-              <i data-lucide="chevron-down" id="faq-icon-2" class="w-4 h-4 text-slate-500 transition-transform" aria-hidden="true"></i>
-            </button>
-            <div id="faq-content-2" role="region" aria-labelledby="faq-btn-2" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Clicking "Buy Now" on any item opens our hosted Printful Quick Store (`crohnsveteranstore.printful.me`), where you can pick your size, select color variations, and check out securely via Stripe with global door-to-door tracking.
-            </div>
-          </div>
-
-          <!-- FAQ 3 -->
-          <div class="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden">
-            <button 
-              type="button"
-              class="w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex justify-between items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500" 
-              onclick="toggleFaq(3)"
-              id="faq-btn-3"
-              aria-expanded="false"
-              aria-controls="faq-content-3"
-            >
-              <span>Can Jordan speak on podcast episodes, webinars, or keynotes?</span>
-              <i data-lucide="chevron-down" id="faq-icon-3" class="w-4 h-4 text-slate-500 transition-transform" aria-hidden="true"></i>
-            </button>
-            <div id="faq-content-3" role="region" aria-labelledby="faq-btn-3" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Yes. Jordan speaks frequently on navigating chronic autoimmune challenges in corporate tech environments, veteran transitions, and harnessing software tools to maintain health boundaries.
-            </div>
-          </div>
-
-          <!-- FAQ 4 -->
-          <div class="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden">
-            <button 
-              type="button"
-              class="w-full px-6 py-4 text-left font-bold text-sm text-slate-900 flex justify-between items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500" 
-              onclick="toggleFaq(4)"
-              id="faq-btn-4"
-              aria-expanded="false"
-              aria-controls="faq-content-4"
-            >
-              <span>Is Crohn's Veteran only for military veterans?</span>
-              <i data-lucide="chevron-down" id="faq-icon-4" class="w-4 h-4 text-slate-500 transition-transform" aria-hidden="true"></i>
-            </button>
-            <div id="faq-content-4" role="region" aria-labelledby="faq-btn-4" class="hidden px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Not at all. While founded by an Air Force veteran, Crohn's Veteran is an inclusive lifestyle, media, and development platform dedicated to supporting anyone navigating Crohn's, Colitis, or autoimmune GI disorders worldwide.
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 11: CLOSING CTA & ACCESSIBLE CONTACT FORM -->
-    <section id="connect" class="py-16 md:py-24 bg-slate-900 text-white" aria-labelledby="contact-heading">
-      <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-10">
-          <span class="text-xs font-bold text-brand-400 uppercase tracking-widest">Direct Collaboration</span>
-          <h2 id="contact-heading" class="text-3xl sm:text-4xl font-black mt-1 mb-3">Let's Build or Collaborate</h2>
-          <p class="text-slate-400 text-xs sm:text-sm">
-            Reach out for custom software, mobile app development, speaking engagements, or media appearances.
-          </p>
-        </div>
-
-        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-800/80 p-6 sm:p-8 rounded-2xl border border-slate-700 shadow-xl">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-          <input type="hidden" name="subject" value="New Inquiry - Crohn's Veteran Platform" />
-          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off" />
-
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="form-name" class="block text-xs font-semibold text-slate-300 mb-1">Name <span class="text-brand-400" aria-hidden="true">*</span></label>
-              <input type="text" id="form-name" name="name" required class="w-full px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition" placeholder="Your name" />
-            </div>
-            <div>
-              <label for="form-email" class="block text-xs font-semibold text-slate-300 mb-1">Email <span class="text-brand-400" aria-hidden="true">*</span></label>
-              <input type="email" id="form-email" name="email" required class="w-full px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition" placeholder="name@example.com" />
-            </div>
-          </div>
-
-          <div>
-            <label for="form-inquiry" class="block text-xs font-semibold text-slate-300 mb-1">Inquiry Type</label>
-            <select id="form-inquiry" name="inquiry_type" class="w-full px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition">
-              <option value="Custom Web & App Development">Custom Web & App Development</option>
-              <option value="AI Tools & Workflows">AI Tools & Workflows</option>
-              <option value="Speaking & Panels">Keynote & Panel Speaking</option>
-              <option value="Business & Media">Business & Media Requests</option>
-              <option value="General Support">General Community & Support</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="form-message" class="block text-xs font-semibold text-slate-300 mb-1">Project Details / Message <span class="text-brand-400" aria-hidden="true">*</span></label>
-            <textarea id="form-message" name="message" rows="4" required class="w-full px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 transition" placeholder="Tell us about your project, timeline, or collaboration idea..."></textarea>
-          </div>
-
-          <button type="submit" class="w-full py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-500">
-            <span>Submit Message</span>
-            <i data-lucide="send" class="w-4 h-4" aria-hidden="true"></i>
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="py-8 bg-slate-950 text-slate-400 text-xs border-t border-slate-800 text-center" role="contentinfo">
-    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>&copy; 2026 Crohn's Veteran. All rights reserved.</p>
-      <div class="flex gap-6">
-        <a href="https://crohnsveteranstore.printful.me/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded p-1 transition">
-          <span>Store</span>
-          <span class="sr-only">(opens in a new tab)</span>
-        </a>
-        <a href="#about" class="hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded p-1 transition">About</a>
-        <a href="#tech-solutions" class="hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded p-1 transition">Tech Solutions</a>
-        <a href="#faq" class="hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded p-1 transition">FAQ</a>
-        <a href="#connect" class="hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 rounded p-1 transition">Contact</a>
+        <a class="btn btn-primary" href="#connect" data-inquiry="Custom Web &amp; App Development">Tell us what you need</a>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- ADA / GDPR Compliant Cookie Consent Banner -->
-  <div 
-    id="cookie-consent-banner" 
-    role="region" 
-    aria-label="Cookie Consent" 
-    class="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-md bg-slate-900 text-white p-5 rounded-2xl shadow-2xl border border-slate-700 z-50 flex flex-col gap-3 transition-transform duration-300"
-  >
-    <div class="flex items-start gap-3">
-      <div class="w-8 h-8 rounded-lg bg-brand-600/20 text-brand-400 flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
-        <i data-lucide="shield-alert" class="w-4 h-4"></i>
-      </div>
-      <div>
-        <h3 class="font-bold text-sm text-slate-100">Privacy & Cookie Preferences</h3>
-        <p class="text-xs text-slate-300 leading-relaxed mt-1">
-          We use cookies to analyze site traffic and enhance your community advocacy experience. Consent is optional and can be declined at any time.
-        </p>
+  <!-- ===== Speaking & media ===== -->
+  <section class="section night media" id="services" aria-labelledby="media-title">
+    <div class="wrap">
+      <h2 id="media-title">Speaking &amp; media</h2>
+      <div class="media-grid">
+        <article class="media-item">
+          <h3>Speaking &amp; guest appearances</h3>
+          <p>Patient summits, healthcare conferences, and veteran and workplace panels. Jordan speaks on serving with and after a Crohn's diagnosis, working full-time with IBD, fatherhood, and bringing more men's voices into patient advocacy.</p>
+          <a class="btn btn-ghost" href="#connect" data-inquiry="Speaking &amp; Panels">Book a speaking date</a>
+        </article>
+        <article class="media-item">
+          <h3>Podcast &amp; media requests</h3>
+          <p>Guest podcast appearances, interviews, brand collaborations, and cross-platform awareness campaigns.</p>
+          <a class="btn btn-ghost" href="#connect" data-inquiry="Business &amp; Media">Send a media inquiry</a>
+        </article>
       </div>
     </div>
-    
-    <div class="flex items-center justify-end gap-2.5 pt-2 border-t border-slate-800">
-      <button 
-        type="button" 
-        id="btn-reject-cookies" 
-        onclick="resolveCookieConsent('denied')" 
-        class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
-      >
-        Reject Non-Essential
-      </button>
-      <button 
-        type="button" 
-        id="btn-accept-cookies" 
-        onclick="resolveCookieConsent('granted')" 
-        class="px-4 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-500"
-      >
-        Accept All
-      </button>
+  </section>
+
+  <!-- ===== Gear ===== -->
+  <section class="section gear" id="gear" aria-labelledby="gear-title">
+    <div class="wrap">
+      <div class="gear-head">
+        <div class="gear-copy">
+          <h2 id="gear-title">Wear your purple support</h2>
+          <p class="lede">Every item purchased directly funds awareness initiatives, community content, and digital health advocacy.</p>
+        </div>
+        <svg class="gear-ribbon" viewBox="0 0 200 300" aria-hidden="true">
+          <defs><linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CDBBFF"/><stop offset="1" stop-color="#7A4FE0"/></linearGradient></defs>
+          <path class="ribbon-path" pathLength="1" d="M60 282 L118 150 C150 90 135 42 100 42 C65 42 50 90 82 150 L140 282" fill="none" stroke="url(#ribbon)" stroke-width="32" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Product cards are rendered here from products.json (falls back to the built-in list in the script). -->
+      <div id="printful-product-grid" class="product-grid" aria-live="polite" aria-busy="true">
+        <div class="product skeleton" aria-hidden="true"></div>
+        <div class="product skeleton" aria-hidden="true"></div>
+        <div class="product skeleton" aria-hidden="true"></div>
+        <div class="product skeleton" aria-hidden="true"></div>
+        <p class="sr-only" role="status">Loading gear catalog…</p>
+      </div>
+
+      <div class="gear-foot">
+        <a class="btn btn-ghost" href="https://crohnsveteranstore.printful.me/" target="_blank" rel="noopener noreferrer">View all items on the official store<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section paper faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details name="faq">
+          <summary>Do I need to have IBD to work with Crohn's Veteran?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>No. We build tools and products for the IBD community and for the people who care about them, including caregivers, families, and allies whose tech needs have nothing to do with IBD.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Is the podcast still releasing new episodes?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>The Crohn's Veteran Podcast released its 75th and final episode on World IBD Day 2023. The full archive is free on Apple Podcasts, Spotify, and YouTube.</p></div>
+        </details>
+        <details name="faq">
+          <summary>How do I reach Jordan about a tool, website, or app?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>Use the form below and choose the closest inquiry type, or email <a href="mailto:jordan@crohnsveteran.com">jordan@crohnsveteran.com</a>. Share a short overview of your idea and timeline. Jordan reviews every technical scope himself and follows up within 24–48 hours.</p></div>
+        </details>
+        <details name="faq">
+          <summary>How does purchasing and checkout work for awareness gear?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>Clicking “Buy now” on any item opens our hosted Printful Quick Store (<code>crohnsveteranstore.printful.me</code>), where you can pick your size, select color variations, and check out securely via Stripe with global door-to-door tracking.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Can Jordan speak on podcasts, webinars, or keynotes?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>Yes. Jordan speaks on living and working with Crohn's, military and career transitions, fatherhood with IBD, and why the patient community needs more men's voices.</p></div>
+        </details>
+        <details name="faq">
+          <summary>Is Crohn's Veteran only for military veterans?<span class="plus" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>Not at all. While founded by an Air Force veteran, Crohn's Veteran is for anyone navigating Crohn's, colitis, or autoimmune GI disorders worldwide, and for the people who support them.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section night contact" id="connect" aria-labelledby="connect-title">
+    <div class="wrap contact-grid">
+      <div class="contact-intro">
+        <h2 id="connect-title">Let's connect</h2>
+        <p class="lede">Whether you have a story to share, an event to book, a question about gear, or a tool to build, we'd love to hear from you.</p>
+        <p class="contact-note">Jordan reviews technical scopes directly and follows up with initial scheduling within 24–48 hours.</p>
+        <p class="contact-email">Prefer email? <a href="mailto:jordan@crohnsveteran.com">jordan@crohnsveteran.com</a></p>
+      </div>
+      <!-- Web3Forms: replace YOUR_WEB3FORMS_ACCESS_KEY with your access key from web3forms.com (it is safe to publish). -->
+      <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="New Inquiry - Crohn's Veteran Platform">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
+        <div class="field">
+          <label for="form-name">Name <span class="req" aria-hidden="true">*</span></label>
+          <input id="form-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="form-email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input id="form-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field full">
+          <label for="form-inquiry">What's this about?</label>
+          <select id="form-inquiry" name="inquiry_type">
+            <option value="General Support">Community &amp; support</option>
+            <option value="Speaking &amp; Panels">Speaking &amp; panels</option>
+            <option value="Business &amp; Media">Podcast, media &amp; partnerships</option>
+            <option value="Custom Web &amp; App Development">Tools, websites &amp; apps</option>
+            <option value="AI Tools &amp; Workflows">AI tools &amp; automations</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="form-message">Message <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="form-message" name="message" required></textarea>
+        </div>
+        <div class="form-foot">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-stack">
+    <div class="footer-row">
+      <p>© <span id="year">2026</span> Crohn's Veteran. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#tech-solutions">Tools</a>
+        <a href="#faq">FAQ</a>
+        <a href="#connect">Contact</a>
+        <a href="https://crohnsveteranstore.printful.me/" target="_blank" rel="noopener">Store<span class="sr-only"> (opens in a new tab)</span></a>
+      </nav>
+    </div>
+    <div class="footer-row">
+      <nav class="footer-social" aria-label="Social">
+        <a href="https://www.instagram.com/official.crohnsveteran/" target="_blank" rel="noopener">Instagram<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://www.youtube.com/channel/UCvmWubDgKaO1DWD1t_gwzsg" target="_blank" rel="noopener">YouTube<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://podcasts.apple.com/us/podcast/crohns-veteran-podcast/id1515327063" target="_blank" rel="noopener">Apple Podcasts<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://open.spotify.com/show/5Nrg39heAdODkBFIzD5B1j" target="_blank" rel="noopener">Spotify<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://www.linkedin.com/in/jordanbmcconnell/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+      </nav>
+      <p class="footer-credit">Logo designed by Morgan McConnell.</p>
     </div>
   </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Cookie Consent Banner & Consent Mode Update Handler
-    function resolveCookieConsent(status) {
-      const banner = document.getElementById('cookie-consent-banner');
-      
-      if (typeof gtag === 'function') {
-        gtag('consent', 'update', {
-          'analytics_storage': status,
-          'ad_storage': status,
-          'ad_user_data': status,
-          'ad_personalization': status
-        });
-      }
+<div class="consent" id="cookie-consent-banner" role="region" aria-labelledby="consent-title" hidden>
+  <h2 id="consent-title">Privacy &amp; cookie preferences</h2>
+  <p>We use cookies to analyze site traffic and enhance your community advocacy experience. Consent is optional and can be declined at any time.</p>
+  <div class="consent-actions">
+    <button class="btn btn-ghost" type="button" id="btn-reject-cookies" data-consent="denied">Reject non-essential</button>
+    <button class="btn btn-primary" type="button" id="btn-accept-cookies" data-consent="granted">Accept all</button>
+  </div>
+</div>
 
-      const maxAge = 365 * 24 * 60 * 60;
-      document.cookie = `cookie_consent=${status}; max-age=${maxAge}; path=/; SameSite=Lax; Secure`;
+<script>
+(function(){
+  "use strict";
+  var $ = function(s,c){return (c||document).querySelector(s);};
+  var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s));};
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+  var hero = $(".hero");
+  var header = $("#site-header");
+  window.__heroScroll = 0;
 
-      if (banner) {
-        banner.classList.add('hidden');
-      }
-    }
+  /* --- Header state + hero scroll progress --- */
+  var ticking = false;
+  function onScroll(){
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      var y = window.scrollY || window.pageYOffset;
+      var h = hero ? hero.offsetHeight : 1;
+      var s = Math.min(Math.max(y / h, 0), 1);
+      header.classList.toggle("is-solid", y > 40);
+      if (hero) hero.style.setProperty("--hs", s.toFixed(3));
+      window.__heroScroll = s;
+      ticking = false;
+    });
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
 
-    // Accessible FAQ Accordion Toggle
-    function toggleFaq(index) {
-      const content = document.getElementById(`faq-content-${index}`);
-      const icon = document.getElementById(`faq-icon-${index}`);
-      const btn = document.getElementById(`faq-btn-${index}`);
-      
-      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', !isExpanded);
-
-      if (isExpanded) {
-        content.classList.add('hidden');
-        icon.classList.remove('rotate-180');
-      } else {
-        content.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-      }
-    }
-
-    // Dynamic Product Loader
-    async function loadPrintfulProducts() {
-      const grid = document.getElementById('printful-product-grid');
-      const STORE_URL = 'https://crohnsveteranstore.printful.me/';
-
-      const DEFAULT_PRODUCTS = [
-        {
-          id: "eco-tote-bag",
-          name: "Crohn's Veteran Gray Eco Tote Bag",
-          price: "From $28.50",
-          variants: 1,
-          thumbnail: "https://files.cdn.printful.com/files/703/703213ec974ce24d1668e1e792f39be9_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "stainless-steel-bottle",
-          name: "Crohn's Veteran Gray Stainless Steel Water Bottle",
-          price: "From $30.88",
-          variants: 1,
-          thumbnail: "https://files.cdn.printful.com/files/647/647b0a7cb54e951d6db0f9bb1682701f_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "silver-dad-hat",
-          name: "Crohn's Veteran Silver Dad Hat",
-          price: "From $22.88",
-          variants: 3,
-          thumbnail: "https://files.cdn.printful.com/files/94f/94f923e2dc9dcaea887a0da4e5d4cb0f_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "unisex-joggers",
-          name: "Crohn's Veteran Gray Unisex Joggers",
-          price: "From $30.88",
-          variants: 5,
-          thumbnail: "https://files.cdn.printful.com/files/fa8/fa8bf547d21cbbd25c4ef64a85669b91_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "purple-womens-slides",
-          name: "Crohn's Veteran Purple Women's Slides",
-          price: "From $42.88",
-          variants: 6,
-          thumbnail: "https://files.cdn.printful.com/files/578/57876a3e5c7075c3db77fa33dcb2858b_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "gray-unisex-hoodie",
-          name: "Crohn's Veteran Gray Unisex Hoodie",
-          price: "From $28.88",
-          variants: 8,
-          thumbnail: "https://files.cdn.printful.com/files/f13/f134547aa521a007328bfb0ecfa31c3b_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "white-glossy-mug",
-          name: "Crohn's Veteran Purple Glossy Mug",
-          price: "From $9.99",
-          variants: 2,
-          thumbnail: "https://files.cdn.printful.com/files/84a/84ae26ef89df89bc7e8d35687d0ec2e9_preview.png",
-          url: STORE_URL
-        },
-        {
-          id: "black-mens-slides",
-          name: "Crohn's Veteran Black Men's Slides",
-          price: "From $42.99",
-          variants: 6,
-          thumbnail: "https://files.cdn.printful.com/files/d6e/d6ea928b584a7e3c155d8f615371c1b1_preview.png",
-          url: STORE_URL
-        }
-      ];
-
-      let products = DEFAULT_PRODUCTS;
-
-      try {
-        const res = await fetch('products.json?v=' + Date.now());
-        if (res.ok) {
-          const loaded = await res.json();
-          if (Array.isArray(loaded) && loaded.length > 0) {
-            products = loaded;
-          }
-        }
-      } catch (e) {
-        console.warn('Falling back to built-in store catalog:', e);
-      }
-
-      grid.innerHTML = products.map(product => {
-        const directUrl = product.url || product.external_url || STORE_URL;
-        return `
-          <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between hover:border-brand-500 hover:shadow-md transition">
-            <div>
-              <div class="h-48 rounded-xl bg-slate-50 overflow-hidden flex items-center justify-center mb-4 border border-slate-100">
-                <img src="${product.thumbnail || 'assets/images/logo.png'}" alt="${product.name}" class="w-full h-full object-contain p-2 hover:scale-105 transition duration-300" onerror="this.src='assets/images/logo.png'" />
-              </div>
-              <h4 class="font-bold text-sm text-slate-900 line-clamp-2">${product.name}</h4>
-              <p class="text-xs text-slate-600 mt-1">${product.price ? product.price + ' • ' : ''}${product.variants || 1} available styles</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between">
-              <span class="text-xs text-brand-700 font-semibold">100% Charity</span>
-              <a href="${directUrl}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold transition shadow-sm inline-flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand-600">
-                <span>Buy Now</span>
-                <i data-lucide="external-link" class="w-3 h-3" aria-hidden="true"></i>
-                <span class="sr-only">(opens product on Printful store)</span>
-              </a>
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      lucide.createIcons();
-    }
-
-    // GA4 Custom Event Tracking
-    function initAnalyticsEvents() {
-      document.addEventListener('click', (e) => {
-        const targetLink = e.target.closest('a');
-        if (!targetLink) return;
-
-        const href = targetLink.getAttribute('href') || '';
-        if (href.includes('crohnsveteranstore.printful.me')) {
-          if (typeof gtag === 'function') {
-            gtag('event', 'begin_checkout', {
-              event_category: 'ecommerce',
-              event_label: 'Printful Store Navigation',
-              destination: href
-            });
-          }
+  /* --- Active nav link --- */
+  var navLinks = $$(".nav-links a");
+  if ("IntersectionObserver" in window){
+    var byId = {};
+    navLinks.forEach(function(a){ byId[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting && byId[e.target.id]){
+          navLinks.forEach(function(a){ a.removeAttribute("aria-current"); });
+          byId[e.target.id].setAttribute("aria-current","true");
         }
       });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    Object.keys(byId).forEach(function(id){ var el = document.getElementById(id); if (el) io.observe(el); });
+  }
 
-      const contactForm = document.querySelector('form[action*="web3forms"]');
-      if (contactForm) {
-        contactForm.addEventListener('submit', () => {
-          const inquiryType = document.getElementById('form-inquiry')?.value || 'General';
-          if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-              event_category: 'engagement',
-              event_label: inquiryType
-            });
-          }
-        });
+  /* --- Mobile menu: popover with fallback --- */
+  var mnav = $("#mnav");
+  var popoverSupported = typeof HTMLElement !== "undefined" && HTMLElement.prototype.hasOwnProperty("popover");
+  if (popoverSupported){
+    $$("#mnav a").forEach(function(a){ a.addEventListener("click", function(){ try{ mnav.hidePopover(); }catch(e){} }); });
+  } else if (mnav){
+    mnav.hidden = true;
+    mnav.style.position = "fixed";
+    mnav.style.zIndex = "70";
+    $$("[popovertarget='mnav']").forEach(function(b){ b.addEventListener("click", function(){ mnav.hidden = !mnav.hidden; }); });
+    $$("#mnav a").forEach(function(a){ a.addEventListener("click", function(){ mnav.hidden = true; }); });
+  }
+
+  /* --- Service links preselect the inquiry type --- */
+  var typeSelect = $("#form-inquiry");
+  $$("[data-inquiry]").forEach(function(a){
+    a.addEventListener("click", function(){ if (typeSelect) typeSelect.value = a.getAttribute("data-inquiry"); });
+  });
+
+  /* --- Image fallbacks: header-logo.png -> logo.png -> text mark; founder.jpg -> initials --- */
+  var logo = $(".brand img");
+  if (logo){
+    var onLogoError = function(){
+      if (logo.getAttribute("data-fallback") !== "1"){
+        logo.setAttribute("data-fallback", "1");
+        logo.src = "assets/images/logo.png";
+      } else {
+        $(".brand").classList.add("no-logo");
+        logo.removeEventListener("error", onLogoError);
+      }
+    };
+    logo.addEventListener("error", onLogoError);
+    if (logo.complete && logo.naturalWidth === 0) onLogoError();
+  }
+  var portraitImg = $(".portrait img");
+  if (portraitImg){
+    portraitImg.addEventListener("error", function(){ $(".portrait").classList.add("no-photo"); });
+  }
+
+  /* --- Portrait tilt (pointer only) --- */
+  if (finePointer && !reduceMotion){
+    $$("[data-tilt]").forEach(function(el){
+      var f = $(".portrait-frame", el);
+      el.addEventListener("pointerenter", function(){ f.classList.add("is-tracking"); });
+      el.addEventListener("pointermove", function(e){
+        var r = f.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        f.style.transform = "rotateY(" + (x * 10).toFixed(2) + "deg) rotateX(" + (-y * 10).toFixed(2) + "deg)";
+        f.style.setProperty("--gx", ((x + 0.5) * 100).toFixed(1) + "%");
+        f.style.setProperty("--gy", ((y + 0.5) * 100).toFixed(1) + "%");
+      });
+      el.addEventListener("pointerleave", function(){ f.classList.remove("is-tracking"); f.style.transform = ""; });
+    });
+  }
+
+  /* --- GA4 events (kept from the original site) --- */
+  function track(name, params){ if (typeof gtag === "function") gtag("event", name, params); }
+  document.addEventListener("click", function(e){
+    var link = e.target.closest ? e.target.closest("a") : null;
+    if (!link) return;
+    var href = link.getAttribute("href") || "";
+    if (href.indexOf("crohnsveteranstore.printful.me") !== -1){
+      track("begin_checkout", { event_category: "ecommerce", event_label: "Printful Store Navigation", destination: href });
+    }
+  });
+
+  /* --- Contact form: Web3Forms, sent in the background with a plain POST fallback --- */
+  var form = $("#contact-form"), statusEl = $("#form-status");
+  var EMAIL_LINK = '<a href="mailto:jordan@crohnsveteran.com">jordan@crohnsveteran.com</a>';
+  function setStatus(state, html){ statusEl.dataset.state = state; statusEl.innerHTML = html; }
+  if (form && window.fetch && window.FormData){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      var key = form.querySelector('[name="access_key"]');
+      if (!key || !key.value || key.value.indexOf("YOUR_") === 0){
+        setStatus("warn", "This form isn't connected yet. Please email " + EMAIL_LINK + " instead.");
+        return;
+      }
+      var btn = form.querySelector('button[type="submit"]');
+      var data = {};
+      new FormData(form).forEach(function(v, k){ data[k] = v; });
+      btn.disabled = true; btn.textContent = "Sending…";
+      setStatus("", "");
+      fetch(form.action, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data)
+      })
+      .then(function(r){ return r.json().then(function(j){ return { ok: r.ok, body: j }; }); })
+      .then(function(res){
+        if (!res.ok || !res.body || !res.body.success) throw new Error((res.body && res.body.message) || "Send failed");
+        track("generate_lead", { event_category: "engagement", event_label: data.inquiry_type || "General" });
+        setStatus("ok", "Thanks! Your message is on its way. Jordan follows up within 24–48 hours.");
+        form.reset();
+      })
+      .catch(function(){
+        setStatus("warn", "Your message didn't send. Please try again, or email " + EMAIL_LINK + ".");
+      })
+      .then(function(){ btn.disabled = false; btn.textContent = "Send message"; });
+    });
+  }
+
+  /* --- Cookie consent: same cookie + Consent Mode v2 update as the original site --- */
+  var banner = $("#cookie-consent-banner");
+  function resolveCookieConsent(status){
+    if (typeof gtag === "function"){
+      gtag("consent", "update", {
+        "analytics_storage": status,
+        "ad_storage": status,
+        "ad_user_data": status,
+        "ad_personalization": status
+      });
+    }
+    var maxAge = 365 * 24 * 60 * 60;
+    document.cookie = "cookie_consent=" + status + "; max-age=" + maxAge + "; path=/; SameSite=Lax; Secure";
+    if (banner) banner.hidden = true;
+  }
+  window.resolveCookieConsent = resolveCookieConsent;
+  if (banner){
+    var consentMatch = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
+    if (!consentMatch) banner.hidden = false;
+    $$("[data-consent]", banner).forEach(function(b){
+      b.addEventListener("click", function(){ resolveCookieConsent(b.getAttribute("data-consent")); });
+    });
+  }
+
+  /* --- Store: products.json with built-in fallback (mirrors products.json) --- */
+  var STORE_URL = "https://crohnsveteranstore.printful.me/";
+  var DEFAULT_PRODUCTS = [
+    {
+      "id": "eco-tote-bag",
+      "name": "Crohn's Veteran Gray Eco Tote Bag",
+      "price": "From $28.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-367-6a94c62022097__360",
+      "variants": 1,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-gray-eco-tote-bag"
+    },
+    {
+      "id": "stainless-steel-bottle",
+      "name": "Crohn's Veteran Gray Stainless Steel Water Bottle",
+      "price": "From $30.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-382-6a94c56d1f808__360",
+      "variants": 1,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-gray-stainless-steel-water-bottle"
+    },
+    {
+      "id": "silver-dad-hat",
+      "name": "Crohn's Veteran Silver Dad Hat",
+      "price": "From $22.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-206-6a94c51d9d033__360",
+      "variants": 3,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-silver-dad-hat"
+    },
+    {
+      "id": "unisex-joggers",
+      "name": "Crohn's Veteran Gray Unisex Joggers",
+      "price": "From $30.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-342-6a94c38ebc188__360",
+      "variants": 5,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-gray-unisex-joggers"
+    },
+    {
+      "id": "purple-womens-slides",
+      "name": "Crohn's Veteran Purple Women's Slides",
+      "price": "From $42.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-598-6a94c2e153340__360",
+      "variants": 6,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-purple-womens-slides"
+    },
+    {
+      "id": "gray-unisex-hoodie",
+      "name": "Crohn's Veteran Gray Unisex Hoodie",
+      "price": "From $28.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-146-6a94c2278c2e2__360",
+      "variants": 8,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-gray-unisex-hoodie"
+    },
+    {
+      "id": "white-glossy-mug",
+      "name": "Crohn's Veteran Purple Glossy Mug",
+      "price": "From $9.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-19-6a94c0cb18e4a__360",
+      "variants": 2,
+      "url": "https://crohnsveteranstore.printful.me/product/white-glossy-mug"
+    },
+    {
+      "id": "black-mens-slides",
+      "name": "Crohn's Veteran Black Men's Slides",
+      "price": "From $42.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-597-6a94bc9050302__360",
+      "variants": 6,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-black-mens-slides"
+    },
+    {
+      "id": "gray-short-sleeve-tee",
+      "name": "Crohn's Veteran Gray Short-Sleeve Unisex T-Shirt",
+      "price": "From $18.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-71-6a94baaed3702__360",
+      "variants": 8,
+      "url": "https://crohnsveteranstore.printful.me/product/crohns-veteran-gray-short-sleeve-unisex-t-shirt"
+    },
+    {
+      "id": "youth-baseball-cap",
+      "name": "You're Awesome! Crohn's Veteran Youth Baseball Cap",
+      "price": "From $23.88",
+      "thumbnail": "https://cdn.printful.me/t/quick-stores/products/w168/18683636-429-6a94b63b33d47__360",
+      "variants": 4,
+      "url": "https://crohnsveteranstore.printful.me/product/youre-awesome-crohns-veteran-youth-baseball-cap"
+    }
+  ];
+  function esc(v){
+    return String(v == null ? "" : v).replace(/[&<>"']/g, function(c){
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function safeUrl(u){ return /^https:\/\//i.test(u || "") ? u : STORE_URL; }
+  function renderProducts(products){
+    var grid = $("#printful-product-grid");
+    if (!grid) return;
+    grid.innerHTML = products.map(function(p){
+      var styles = Number(p.variants) || 1;
+      var thumb = /^https:\/\//i.test(p.thumbnail || "") ? p.thumbnail : "assets/images/logo.png";
+      return '<article class="product">' +
+        '<div class="product-img"><img src="' + esc(thumb) + '" alt="' + esc(p.name) + '" loading="lazy" decoding="async" width="360" height="360"></div>' +
+        '<h3 class="product-name">' + esc(p.name) + '</h3>' +
+        '<p class="product-meta">' + (p.price ? '<strong>' + esc(p.price) + '</strong>' : '') +
+          '<span>' + styles + (styles === 1 ? ' style' : ' styles') + '</span></p>' +
+        '<div class="product-foot"><span class="product-tag">100% Charity</span>' +
+          '<a class="btn btn-buy" href="' + esc(safeUrl(p.url || p.external_url)) + '" target="_blank" rel="noopener noreferrer">Buy now' +
+          '<span class="sr-only"> ' + esc(p.name) + ' (opens product on Printful store)</span></a></div>' +
+        '</article>';
+    }).join("");
+    grid.setAttribute("aria-busy", "false");
+    $$("img", grid).forEach(function(img){
+      img.addEventListener("error", function(){
+        if (img.getAttribute("data-fallback") !== "1"){ img.setAttribute("data-fallback", "1"); img.src = "assets/images/logo.png"; }
+      });
+    });
+  }
+  (function loadProducts(){
+    if (!window.fetch){ renderProducts(DEFAULT_PRODUCTS); return; }
+    fetch("products.json?v=" + Date.now())
+      .then(function(res){ return res.ok ? res.json() : null; })
+      .then(function(list){ renderProducts(Array.isArray(list) && list.length ? list : DEFAULT_PRODUCTS); })
+      .catch(function(err){ console.warn("Falling back to built-in store catalog:", err); renderProducts(DEFAULT_PRODUCTS); });
+  })();
+
+  /* --- Year --- */
+  var yr = $("#year"); if (yr) yr.textContent = new Date().getFullYear();
+
+  /* ===== Cinematic hero: flight over a dawn horizon (three.js) ===== */
+  var canvas = $("#terrain");
+  if (!canvas || !hero) return;
+
+  var s = document.createElement("script");
+  s.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+  s.async = true;
+  s.onload = function(){ try { initTerrain(); } catch(err){ /* CSS sky remains as fallback */ } };
+  document.head.appendChild(s);
+
+  function initTerrain(){
+    var THREE = window.THREE;
+    if (!THREE) return;
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({canvas:canvas, antialias:false, alpha:true, powerPreference:"high-performance"});
+    } catch(e){ return; }
+
+    var small = window.matchMedia("(max-width: 760px)").matches;
+    var PR = Math.min(window.devicePixelRatio || 1, small ? 1.5 : 2);
+    renderer.setPixelRatio(PR);
+    renderer.setClearColor(0x000000, 0);
+
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera(50, 1, 0.1, 120);
+    var look = new THREE.Vector3();
+
+    var COLS = small ? 110 : 220, ROWS = small ? 160 : 230;
+    var W = small ? 40 : 76, D = 62;
+    var pos = new Float32Array(COLS * ROWS * 3), i = 0;
+    for (var r = 0; r < ROWS; r++){
+      for (var c = 0; c < COLS; c++){
+        pos[i++] = (c / (COLS - 1) - 0.5) * W;
+        pos[i++] = 0;
+        pos[i++] = 3 - (r / (ROWS - 1)) * D;
       }
     }
+    var geo = new THREE.BufferGeometry();
+    geo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // Check stored cookie preferences
-      const match = document.cookie.match(/(^|;)\s*cookie_consent=([^;]+)/);
-      const consent = match ? match[2] : null;
-      const banner = document.getElementById('cookie-consent-banner');
-      if (consent && banner) {
-        banner.classList.add('hidden');
-      }
+    var uniforms = {
+      uTime:{value:0},
+      uPR:{value:PR},
+      uLow:{value:new THREE.Color("#7C5BD6")},
+      uHigh:{value:new THREE.Color("#DCCEFF")},
+      uDawn:{value:new THREE.Color("#FFC29E")}
+    };
 
-      lucide.createIcons();
-      loadPrintfulProducts();
-      initAnalyticsEvents();
+    var vert = [
+      "uniform float uTime;",
+      "uniform float uPR;",
+      "varying float vElev;",
+      "varying float vDepth;",
+      "float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123); }",
+      "float noise(vec2 p){ vec2 i = floor(p); vec2 f = fract(p); vec2 u = f*f*(3.0-2.0*f);",
+      "  return mix(mix(hash(i), hash(i+vec2(1.0,0.0)), u.x), mix(hash(i+vec2(0.0,1.0)), hash(i+vec2(1.0,1.0)), u.x), u.y); }",
+      "float fbm(vec2 p){ float v = 0.0; float a = 0.5; for (int k = 0; k < 5; k++){ v += a*noise(p); p = p*2.03 + vec2(1.7, 9.2); a *= 0.5; } return v; }",
+      "void main(){",
+      "  vec3 p = position;",
+      "  vec2 q = vec2(p.x*0.11, (p.z - uTime)*0.11);",
+      "  float h = fbm(q);",
+      "  float ridge = smoothstep(1.5, 12.0, abs(p.x));",
+      "  float elev = pow(h, 1.8) * (0.6 + ridge*3.2);",
+      "  p.y = elev*2.4 - 1.2;",
+      "  vec4 mv = modelViewMatrix * vec4(p, 1.0);",
+      "  gl_Position = projectionMatrix * mv;",
+      "  float depth = -mv.z;",
+      "  gl_PointSize = uPR * clamp(22.0/depth, 1.0, 4.2);",
+      "  vElev = clamp(elev, 0.0, 1.4);",
+      "  vDepth = depth;",
+      "}"
+    ].join("\n");
+
+    var frag = [
+      "uniform vec3 uLow;",
+      "uniform vec3 uHigh;",
+      "uniform vec3 uDawn;",
+      "varying float vElev;",
+      "varying float vDepth;",
+      "void main(){",
+      "  vec2 c = gl_PointCoord - 0.5;",
+      "  float d = length(c);",
+      "  if (d > 0.5) discard;",
+      "  float soft = smoothstep(0.5, 0.05, d);",
+      "  vec3 col = mix(uLow, uHigh, smoothstep(0.1, 1.1, vElev));",
+      "  float far = smoothstep(16.0, 52.0, vDepth);",
+      "  col = mix(col, uDawn, far*0.75);",
+      "  float fadeFar = 1.0 - smoothstep(42.0, 60.0, vDepth);",
+      "  float fadeNear = smoothstep(0.8, 4.0, vDepth);",
+      "  float a = soft * fadeFar * fadeNear * (0.5 + smoothstep(0.0, 1.2, vElev)*0.5);",
+      "  gl_FragColor = vec4(col, a);",
+      "}"
+    ].join("\n");
+
+    var mat = new THREE.ShaderMaterial({
+      uniforms:uniforms, vertexShader:vert, fragmentShader:frag,
+      transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
     });
-  </script>
+    var points = new THREE.Points(geo, mat);
+    points.frustumCulled = false;
+    scene.add(points);
+
+    function resize(){
+      var w = hero.clientWidth, h = hero.clientHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+      if (reduceMotion) renderStatic();
+    }
+
+    var px = 0, py = 0, tx = 0, ty = 0, travel = 0, last = performance.now(), raf = 0, running = false, shown = false;
+
+    function place(sc){
+      camera.position.set(px * 1.3, 1.6 + sc * 1.4 - py * 0.35, 4);
+      look.set(px * 0.5, -0.4 + sc * 7, -20);
+      camera.lookAt(look);
+    }
+    function reveal(){ if (!shown){ shown = true; canvas.classList.add("is-live"); } }
+    function renderStatic(){ place(0); renderer.render(scene, camera); reveal(); }
+
+    function frame(now){
+      var dt = Math.min((now - last) / 1000, 0.05);
+      last = now;
+      var sc = window.__heroScroll || 0;
+      travel += dt * (1.1 + sc * 2.4);
+      uniforms.uTime.value = travel;
+      px += (tx - px) * 0.04;
+      py += (ty - py) * 0.04;
+      place(sc);
+      renderer.render(scene, camera);
+      reveal();
+      raf = requestAnimationFrame(frame);
+    }
+    function start(){ if (running || reduceMotion) return; running = true; last = performance.now(); raf = requestAnimationFrame(frame); }
+    function stop(){ running = false; cancelAnimationFrame(raf); }
+
+    if ("ResizeObserver" in window){ new ResizeObserver(resize).observe(hero); }
+    else { window.addEventListener("resize", resize); }
+    resize();
+
+    if (reduceMotion){ renderStatic(); return; }
+
+    if (finePointer){
+      window.addEventListener("pointermove", function(e){
+        tx = (e.clientX / window.innerWidth - 0.5) * 2;
+        ty = (e.clientY / window.innerHeight - 0.5) * 2;
+      }, {passive:true});
+    }
+
+    var heroVisible = true;
+    if ("IntersectionObserver" in window){
+      new IntersectionObserver(function(entries){
+        heroVisible = entries[0].isIntersecting;
+        if (heroVisible && !document.hidden) start(); else stop();
+      }).observe(hero);
+    }
+    document.addEventListener("visibilitychange", function(){
+      if (document.hidden) stop(); else if (heroVisible) start();
+    });
+    start();
+  }
+})();
+</script>
 </body>
 </html>
